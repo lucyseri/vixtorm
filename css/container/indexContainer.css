@@ -20,12 +20,7 @@
 .container{
   width: 100%;
   height: auto;
-  
 }
-.container .inner-container{}
-.container .inner-container .index-container{}
-.container .inner-container .index-container .sections{}
-
 /* section1 */
 .container .inner-container .index-container .sections .section.sec1{
   width: 100%;
@@ -214,9 +209,6 @@
   }
 }
 
-
-
-
 .container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -286,14 +278,54 @@
   justify-content: space-between;
   gap: 40px;
 }
+
 .container .inner-container .index-container .sections .section.sec4 .sec-con .left-con{
   flex: 1;
-  height: 700px;
-  border: 1px solid;
+  height: auto;
 }
+.container .inner-container .index-container .sections .section.sec4 .sec-con .sns{
+  display: flex;
+  gap: 40px;
+  margin: 40px 0;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .sns .icon{
+  flex: 0 0 140px;
+  height: 140px;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .sns .icon img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .sns .txt-con{
+  line-height: 20px;
+}
+
 .container .inner-container .index-container .sections .section.sec4 .sec-con .right-con{
   flex: 1;
-  height: 700px;
-  border: 1px solid;
+  height: auto;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .right-con .notice{
+  margin: 40px 0;
+  width: 100%;
+  height: auto;
+}
 
+.container .inner-container .index-container .sections .section.sec4 .sec-con .right-con .notice ul li{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .right-con .notice ul li a.noti-txt{
+  flex: 0 1 500px;
+  overflow: hidden;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .right-con .notice ul li a.noti-date{
+  flex: 0 1 140px;
+  text-align: right;
+  line-height: 20px;
+  font-size: 14px;
 }

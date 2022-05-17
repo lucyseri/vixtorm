@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>한국전력배구단</title>
+	<script src="js/jq_header.js" defer></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/js_index.js" defer></script>
 	<link rel="stylesheet" href="css/pages/index.css">
 </head>
@@ -65,10 +67,69 @@
 					</div>
 					<div class="goto">
 						<ul>
-							<li><a href="#">로그인</a></li>
-							<li><a href="#">회원가입</a></li>
+							<li>로그인</li>
+							<li>회원가입</li>
 							<li><a href="#">쇼핑몰</a></li>
 						</ul>
+					</div>
+					<div class="login popup">
+						<div class="login-con">
+							<span class="login out">X</span>
+							<form action="#">
+								<ul>
+									<li>
+										<label for="userEmail">이메일</label>
+										<input type="email" name="userEmail" id="userEmail">
+									</li>
+									<li>
+										<label for="userPw">비밀번호</label>
+										<input type="text" name="userPw" id="userPw">
+									</li>
+									<li>
+										<button type="button">로그인</button>
+									</li>
+								</ul>
+							</form>
+							<div class="search">
+								<a href="#">비밀번호찾기</a>
+							</div>
+						</div>
+					</div>
+					<div class="join popup">
+						<div class="join-con">
+							<span class="join out">X</span>
+							<form action="#">
+								<ul>
+									<li>
+										<label for="userName">이름</label>
+										<input type="text" name="userName" id="userName">
+									</li>
+									<li>
+										<label for="userPhone">전화번호</label>
+										<select name="userPhone" id="userPhone">
+											<option value="010">010</option>
+											<option value="011">011</option>
+										</select>
+										<input type="text" name="userPhone" id="userPhone" maxlength="8" placeholder="공백없이 숫자만 입력">
+									</li>
+									<li>
+										<label for="userEmail">이메일</label>
+										<input type="email" name="userEmail" id="userEmail">
+									</li>
+									<li>
+										<label for="userPw">비밀번호</label>
+										<input type="text" name="userPw" id="userPw">
+									</li>
+									<li>
+										<label for="userPw2">비밀번호확인</label>
+										<input type="text" name="userPw2" id="userPw2">
+									</li>
+									<li>
+										<button>회원가입</button>
+									</li>
+								</ul>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -569,13 +630,68 @@
 								<div class="left-con">
 									<div class="title">
 										<h2>SNS</h2>
-										<div class="btn"></div>
+									</div>
+									<div class="sns youtube">
+										<div class="icon">
+											<img src="" alt="youtube">
+										</div>
+										<div class="txt-con">
+											<strong>title</strong>
+											<br>
+											#youtube #text
+										</div>
+									</div>
+									<div class="sns insta">
+										<div class="icon">
+											<img src="" alt="insta">
+										</div>
+										<div class="txt-con">
+											<strong>title</strong>
+											<br>
+											#instagram #text
+										</div>
 									</div>
 								</div>
 								<div class="right-con">
 									<div class="title">
 										<h2>공지사항</h2>
 										<div class="btn"></div>
+									</div>
+									<div class="notice">
+										<ul>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+											<li>
+												<a href="#" class="noti-txt">notice</a>
+												<a href="#" class="noti-date">2022.05.17</a>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>

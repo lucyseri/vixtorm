@@ -34,34 +34,34 @@
 }
 
 
-.header .inner-header .nav   .gnb {
+.header .inner-header .nav .gnb {
   flex: 0 1 680px;
 }
 
-.header .inner-header .nav   .gnb ul {
+.header .inner-header .nav .gnb ul {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
 
-.header .inner-header .nav   .gnb>ul>li {
+.header .inner-header .nav .gnb>ul>li {
   line-height: 60px;
   position: relative;
   padding: 20px 0;
   box-sizing: border-box;
 }
 
-.header .inner-header .nav   .gnb>ul>li a {
+.header .inner-header .nav .gnb>ul>li a {
   color: #fff;
   font-size: 18px;
   position: relative;
 }
 
-.header .inner-header .nav   .gnb>ul>li:hover>a{
+.header .inner-header .nav .gnb>ul>li:hover>a {
   letter-spacing: 2px;
-} 
+}
 
-.header .inner-header .nav   .gnb ul>li ul.sub::before{
+.header .inner-header .nav .gnb ul>li ul.sub::before {
   content: '';
   display: block;
   width: 0;
@@ -74,7 +74,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.header .inner-header .nav   .gnb ul>li ul.sub {
+
+.header .inner-header .nav .gnb ul>li ul.sub {
   width: 250%;
   position: absolute;
   top: 100px;
@@ -85,21 +86,22 @@
   transition: all 0.2s;
   padding: 0 0 20px;
 }
-.header .inner-header .nav   .gnb ul li:hover ul.sub {
+
+.header .inner-header .nav .gnb ul li:hover ul.sub {
   display: block;
 }
 
-.header .inner-header .nav   .gnb ul>li ul.sub li {
+.header .inner-header .nav .gnb ul>li ul.sub li {
   text-align: center;
   line-height: 40px;
 }
 
-.header .inner-header .nav   .gnb ul>li ul.sub li a {
+.header .inner-header .nav .gnb ul>li ul.sub li a {
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
-.header .inner-header .nav   .gnb ul>li ul.sub li a::after {
+.header .inner-header .nav .gnb ul>li ul.sub li a::after {
   content: '';
   display: block;
   width: 0;
@@ -111,7 +113,8 @@
   transform: translateX(-50%);
   transition: all 0.2s;
 }
-.header .inner-header .nav   .gnb ul>li ul.sub li:hover a::after{
+
+.header .inner-header .nav .gnb ul>li ul.sub li:hover a::after {
   content: '';
   display: block;
   width: 100%;
@@ -123,28 +126,31 @@
 }
 
 
-.header .inner-header .nav   .goto {
+.header .inner-header .nav .goto {
   flex: 0 1 320px;
   padding: 20px 0;
 }
 
-.header .inner-header .nav   .goto ul {
+.header .inner-header .nav .goto ul {
   display: flex;
   justify-content: end;
   gap: 20px;
 }
 
-.header .inner-header .nav   .goto ul li {
+.header .inner-header .nav .goto ul li {
   line-height: 60px;
   text-align: right;
-}
-
-.header .inner-header .nav   .goto ul li a {
   color: rgb(255, 255, 255);
   font-size: 12px;
   position: relative;
 }
-.header .inner-header .nav   .goto ul li:not(:last-child) a::after{
+
+.header .inner-header .nav .goto ul li a {
+  color: inherit;
+  font-size: inherit;
+}
+
+.header .inner-header .nav .goto ul li:not(:last-child)::after {
   content: '';
   display: block;
   width: 2px;
@@ -154,4 +160,146 @@
   right: -10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header .inner-header .nav .popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition:all 0.3s;
+  background-color: rgba(0, 0, 0, 0.404);
+  width: 100vw;
+  
+  height: 0;
+  visibility:hidden;
+  opacity: 0;
+  /*
+  height: 100vh;
+  visibility:visible;
+  opacity: 1;
+  */
+  
+}
+
+.header .inner-header .nav .popup span.out{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header .inner-header .nav .popup .login-con{
+  flex: 0 1 400px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+}
+.header .inner-header .nav .popup .login-con form{
+  padding: 40px 0 0;
+}
+.header .inner-header .nav .popup .login-con form ul{
+  width: 100%;
+}
+.header .inner-header .nav .popup .login-con form ul li{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-header .nav .popup .login-con form ul li label{
+  line-height: 40px;
+}
+.header .inner-header .nav .popup .login-con form ul li input{
+  flex: 0 1 200px;
+  height: 40px;
+  background-color: aliceblue;
+  outline: 0;
+  border: 0;
+}
+.header .inner-header .nav .popup .login-con form ul li button{
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  outline: 0;
+  border: 0;
+}
+.header .inner-header .nav .popup .login-con .search{
+  width: 100%;
+}
+.header .inner-header .nav .popup .login-con .search a{
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+
+.header .inner-header .nav .popup .join-con{
+  flex: 0 1 400px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: #fff;
+}
+.header .inner-header .nav .popup .join-con form{
+  padding: 40px 0 0;
+}
+.header .inner-header .nav .popup .join-con form ul{
+  width: 100%;
+}
+.header .inner-header .nav .popup .join-con form ul li{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+.header .inner-header .nav .popup .join-con form ul li label{
+  flex: 0 0 100px;
+  line-height: 40px;
+}
+.header .inner-header .nav .popup .join-con form ul li input:not(input#userPhone){
+  flex: 0 1 200px;
+  height: 40px;
+  background-color: aliceblue;
+  outline: 0;
+  border: 0;
+}
+.header .inner-header .nav .popup .join-con form ul li select{
+  flex: 0 0 50px;
+}
+.header .inner-header .nav .popup .join-con form ul li:nth-child(2) input{
+  width: 130px;
+  height: 40px;
+  background-color: aliceblue;
+  outline: 0;
+  border: 0;
+  font-size: 12px;
+}
+
+.header .inner-header .nav .popup .join-con form ul li button{
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  outline: 0;
+  border: 0;
+}
+
+
+
+.popupSign{
+  height: 100vh !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
