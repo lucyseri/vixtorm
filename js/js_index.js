@@ -55,3 +55,61 @@ window.addEventListener("scroll", function(){
     photoGallery.classList.remove('sec3Animation');
   }
 })
+
+//section4
+const sec4leftArrow=document.querySelector('span.left.sec4Arrow');
+const sec4rightArrow=document.querySelector('span.right.sec4Arrow');
+
+const sec4CardSlide=document.querySelector('.card-con');
+const sec4CardSlideUl=sec4CardSlide.querySelector('ul');
+const sec4CardSlideUlLi=sec4CardSlideUl.querySelectorAll('li');
+
+const gap4=sec4CardSlideUlLi[1].offsetLeft - sec4CardSlideUlLi[0].offsetLeft;
+
+
+let i2=0;
+
+sec4leftArrow.addEventListener('click', e => {
+
+  i2++;
+  
+  const goto4=(-i2*gap4) + 'px';
+  
+  sec4CardSlide.style.left=goto4;
+  sec4CardSlide.style.transition=300+"ms";
+  
+  
+  let startNum=i2+2;
+  sec4CardSlideUlLi.forEach((el, idx)=>{
+    if(idx==startNum){
+      el.classList.add('sec4Animation');
+    }else{
+      el.classList.remove('sec4Animation');
+    }
+  })
+  
+
+})
+sec4rightArrow.addEventListener('click', e => {
+  
+  i2--;
+ 
+  const goto4=(-i2*gap4) + "px";
+  
+  sec4CardSlide.style.left=goto4;
+  sec4CardSlide.style.transition=300+"ms";
+  
+  let startNum=i2+2;
+  sec4CardSlideUlLi.forEach((el, idx)=>{
+    if(idx==startNum){
+      el.classList.add('sec4Animation');
+    }else{
+      el.classList.remove('sec4Animation');
+    }
+  })
+
+})
+
+
+
+
