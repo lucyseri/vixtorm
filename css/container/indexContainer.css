@@ -262,7 +262,16 @@
   left: 0;
   visibility: hidden;
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.466);
 }
+.lightBoxOn{
+  height: 100vh !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con{}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out{}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery{}
 
 /* section4 */
 .container .inner-container .index-container .sections .section.sec4{
