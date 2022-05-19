@@ -57,6 +57,52 @@
   opacity: 1 !important;
 }
 
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.btn{
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.left.btn{
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid rgb(255, 255, 255);
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.right.btn{
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 8px solid rgb(255, 255, 255);
+
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.stop.btn{
+  width: 15px;
+  height: 15px;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  margin-right: 20px;
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.start.btn{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 20px;
+}
+
 /* section2 */
 .container .inner-container .index-container .sections .section.sec2{
   padding: 60px 0;
@@ -255,6 +301,9 @@
   opacity: 1;
 }
 .container .inner-container .index-container .sections .section.sec3 .sec-con .light-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 0;
   position: fixed;
@@ -269,9 +318,82 @@
   visibility: visible !important;
   opacity: 1 !important;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con{}
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out{}
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery{}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con{
+  flex: 0 1 800px;
+  height: 700px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery ul{
+  width: 100%;
+  height: inherit;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery ul li{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
+  width: 30px;
+  height: 30px;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  box-sizing: border-box;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.left{
+  transform: rotate(225deg);
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.right{
+  transform: rotate(45deg);
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con a{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 40px;
+}
 
 /* section4 */
 .container .inner-container .index-container .sections .section.sec4{
@@ -287,6 +409,7 @@
 .container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide{
   width: 100%;
   height: 489px;
+  margin: 40px 0;
   display: flex;
   justify-content: space-between;  
 }
@@ -356,10 +479,10 @@
 }
 .container .inner-container .index-container .sections .section.sec5 .sec-con{
   flex: 0 1 1400px;
-  width: 100%;
   height: auto;
 }
 .container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon{
+  margin: 40px 0;
   width: 100%;
   height: auto;
   display: flex;

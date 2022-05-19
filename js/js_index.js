@@ -5,6 +5,9 @@ const gallery=document.querySelector('.gallery');
 const galleryUl=gallery.querySelector('ul');
 const galleryUlLi=galleryUl.querySelectorAll('li');
 
+const bcon=document.querySelector('.bcon');
+const bconBtn=bcon.querySelectorAll('span.btn');
+
 const arrBg=[];
 
 for(let i=0;i<galleryUlLi.length;i++){
@@ -33,6 +36,59 @@ function autogallery(){
 }
 
 let setIn = setInterval(autogallery, 3000);
+
+
+
+bcon.addEventListener('click', sec1bannerFn);
+function sec1bannerFn(e){
+  if(e.type=='click'){
+    bconBtn.forEach((el, idx)=>{
+      if(e.target==el){
+        if(idx==0){
+          if(i<=0) i=galleryUlLi.length;
+
+          i--;
+          
+          galleryUlLi.forEach((el, idx)=>{
+            if(i===idx){
+              el.classList.add('visible');
+            }else{
+              el.classList.remove('visible');
+            }
+          })
+
+          if(i<=0) i=galleryUlLi.length; 
+          
+        }else if(idx==1){
+          
+          setIn = setInterval(autogallery, 3000);
+          
+        }else if(idx==2){
+
+          clearInterval(setIn);
+          
+        }else if(idx==3){
+          if(i>=galleryUlLi.length-1) i=-1;
+
+          i++;
+
+          galleryUlLi.forEach((el, idx)=>{
+            if(i===idx){
+              el.classList.add('visible');
+            }else{
+              el.classList.remove('visible');
+            }
+          })
+
+          if(i>=galleryUlLi.length-1) i=-1;
+          
+        }
+        
+      }
+
+    })
+  }
+}
 
 (()=>{autogallery()})();
 
@@ -79,12 +135,25 @@ function sec2slideFn(e){
 
 
 //section3
+
 const photoGallery=document.querySelector('.photo-gallery');
+const photoGalleryUl=photoGallery.querySelector('ul');
+const photoGalleryUlLi=photoGalleryUl.querySelectorAll('li');
 const galleryImg=document.querySelectorAll('.gallery-img');
+
+const boxCon=document.querySelector('.box-con');
+const lightBox=document.querySelector('.light-box');
+const boxGallery=document.querySelector('.box-gallery');
+const boxGalleryUl=boxGallery.querySelector('ul');
+const boxGalleryUlLi=boxGalleryUl.querySelectorAll('li');
+
+const boxOut=document.querySelector('span.box-out');
+const centerBtn=boxCon.querySelector('.center-btn');
+const sec3Arrow=centerBtn.querySelectorAll('span.sec3arrow');
 
 const arrBg3=[];
 for(let i=0;i<galleryImg.length;i++){
-  arrBg3.push(`url(img/sec3_${i}.jpg) no-repeat 50%/cover`);
+  arrBg3.push(`url(img/sec3_${i}_0.jpg) no-repeat 50%/cover`);
   galleryImg[i].style.background=arrBg3[i];
 }
 
@@ -97,6 +166,37 @@ window.addEventListener("scroll", function(){
   }else{
     photoGallery.classList.remove('sec3Animation');
   }
+})
+
+photoGalleryUl.addEventListener('click', (e)=>{
+  photoGalleryUlLi.forEach((el, idx)=>{
+    if(e.target.parentElement==el){
+      lightBox.classList.add('lightBoxOn');
+      
+      boxGalleryUlLi.forEach((el2, idx2)=>{
+        el2.style.background=`black url(img/sec3_${idx}_${idx2}.jpg) no-repeat 50%/auto`;
+      })
+    }
+  })
+})
+boxOut.addEventListener('click', (e)=>{
+  lightBox.classList.remove('lightBoxOn');
+})
+
+centerBtn.addEventListener('click', (e)=>{
+  sec3Arrow.forEach((el, idx)=>{
+
+    if(e.target==el){
+      if(idx==0){
+        const firstImg=boxGalleryUl.firstElementChild;
+        boxGalleryUl.appendChild(firstImg);
+      }else if(idx==1){
+        const lastImg=boxGalleryUl.lastElementChild;
+        boxGalleryUl.prepend(lastImg);
+      }
+    }
+
+  })
 })
 
 //section4
@@ -157,5 +257,5 @@ sec4rightArrow.addEventListener('click', e => {
 })
 
 
-
+//section5
 
