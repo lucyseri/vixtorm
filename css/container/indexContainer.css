@@ -20,6 +20,7 @@
 .container{
   width: 100%;
   height: auto;
+  background-color: #f4f4f4;
 }
 /* section1 */
 .container .inner-container .index-container .sections .section.sec1{
@@ -120,7 +121,6 @@
   height: 440px;
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .arrow-btn{
   flex: 0 1 30px;
@@ -128,7 +128,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .arrow-btn span.arrow{
   width: 30px;
@@ -165,21 +165,35 @@
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
   flex: 0 1 320px;
   height: inherit;
-  border-radius: 25px;
-  background-color: rgb(195, 227, 255);
+  background-color: rgb(255, 255, 255);
+  border-top: 5px solid #f00;
   padding: 40px;
   box-sizing: border-box;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3{
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
   text-align: center;
   font-size: 14px;
   line-height: 20px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li p.gameday{
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+}
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.date{
   width: 100%;
   height: auto;
   text-align: center;
-  margin: 40px 0;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
   width: 100%;
@@ -191,7 +205,6 @@
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .home-emblem{
   flex: 0 0 100px;
   height: inherit;
-  background-color: rgb(124, 124, 124);
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
   flex: 0 0 40px;
@@ -201,7 +214,6 @@
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
   flex: 0 0 100px;
   height: inherit;
-  background-color: rgb(124, 124, 124);
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem img{
   width: 100%;
@@ -212,20 +224,25 @@
   display: flex;
   justify-content: space-between;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .home-scoer{
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score{
   flex: 0 0 100px;
+  text-align: center;
+  margin: 20px 0;
+}
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .scoer p.team-name{
+  width: 100%;
   text-align: center;
   line-height: 40px;
   font-size: 18px;
-  margin: 20px 0;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .away-scoer{
-  flex: 0 0 100px;
+.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
+  width: 100%;
   text-align: center;
   line-height: 40px;
   font-size: 18px;
-  margin: 20px 0;
+  font-weight: 700;
 }
+
 
 /* section3 */
 .container .inner-container .index-container .sections .section.sec3{
@@ -401,6 +418,7 @@
   height: auto;
   display: flex;
   justify-content: center;
+  padding: 40px 0;
 }
 .container .inner-container .index-container .sections .section.sec4 .sec-con{
   flex: 0 1 1460px;
@@ -408,7 +426,7 @@
 }
 .container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide{
   width: 100%;
-  height: 489px;
+  height: 404px;
   margin: 40px 0;
   display: flex;
   justify-content: space-between;  
@@ -419,7 +437,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 .container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .slide-arrow span.sec4Arrow{
   width: 30px;
@@ -437,7 +455,6 @@
 .container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide{
   flex: 0 1 1400px;
   height: inherit;
-  border: 1px solid;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
@@ -457,11 +474,11 @@
   gap: 20px;
 }
 .container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li{
-  flex: 0 1 326px;
+  flex: 0 1 264px;
   height: inherit;
-  background-color: cadetblue;
   transform: scale(0.8);
   opacity: 0.6;
+  
 }
 
 .sec4Animation{
@@ -471,6 +488,7 @@
 
 /*section5*/
 .container .inner-container .index-container .sections .section.sec5{
+  background-color: #fff;
   width: 100%;
   height: auto;
   display: flex;
@@ -495,7 +513,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ccc;
+  background-color: #f4f4f4;
 }
 .container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon .icon img{
   width: 40%;
