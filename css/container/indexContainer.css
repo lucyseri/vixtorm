@@ -8,12 +8,16 @@
   line-height: 40px;
 }
 .title .btn{
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid rgb(0, 0, 0);
-  border-right: 3px solid rgb(0, 0, 0);
-  transform: rotate(45deg);
-  margin: 15px 0;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #f00;
+  font-weight: bold;
+  font-size: 25px;
+}
+.title .btn:hover{
+  color: #fff;
+  background-color: #f00;
 }
 
 
@@ -334,6 +338,7 @@
   height: 100vh !important;
   visibility: visible !important;
   opacity: 1 !important;
+  z-index: 90;
 }
 .container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con{
   flex: 0 1 800px;
@@ -345,16 +350,22 @@
 .container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out{
   display: block;
   width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
+  line-height: 50px;
   box-sizing: border-box;
   color: #fff;
   margin: 0 auto;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out:hover{
+  color: #fff;
+  background-color: #f00;
 }
 .container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery{
   width: 100%;
@@ -410,6 +421,7 @@
   bottom: 0;
   left: 0;
   line-height: 40px;
+  padding: 20px 0;
 }
 
 /* section4 */
@@ -478,22 +490,39 @@
   height: inherit;
   transform: scale(0.8);
   opacity: 0.6;
-  
+  position: relative;
+}
+.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }
 
 .sec4Animation{
   transform: scale(1) !important;
   opacity: 1 !important;
 }
+.sec4PlayerAni{
+  bottom: 0 !important;
+  font-style: italic;
+  background-color: #f4f4f493;
+  padding: 8px 0;
+}
 
 /*section5*/
 .container .inner-container .index-container .sections .section.sec5{
-  background-color: #fff;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  padding: 40px 0;
+  padding: 60px 0;
+  background-color: #fff;
 }
 .container .inner-container .index-container .sections .section.sec5 .sec-con{
   flex: 0 1 1400px;
@@ -523,4 +552,6 @@
 .container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon .icon a{
   text-align: center;
   line-height: 20px;
+  margin-top: 20px;
+  font-weight: bold;
 }

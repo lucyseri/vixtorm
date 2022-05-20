@@ -2,27 +2,23 @@
 .footer{
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 .footer::before{
   content: '';
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #000;
 }
 .footer .top-footer{
   display: flex;
   justify-content: center;
-  box-shadow: 1px 1px 1px 0 #000;
+  box-shadow: 1px 1px 1px 0px #ccc ;
 }
 .footer .top-footer .top-inner{
   flex: 0 1 1400px;
 }
-.footer .top-footer .top-inner .top-nav{
 
-}
-.footer .top-footer .top-inner .top-nav .top-gnb{}
 .footer .top-footer .top-inner .top-nav .top-gnb ul{
   display: flex;
   justify-content: space-between;
@@ -30,7 +26,10 @@
 .footer .top-footer .top-inner .top-nav .top-gnb ul li{
   line-height: 40px;
 }
-.footer .top-footer .top-inner .top-nav .top-gnb ul li a{}
+.footer .top-footer .top-inner .top-nav .top-gnb ul li a{
+  font-size: 14px;
+}
+
 
 .footer .bottom-footer{
   padding: 20px 0;
@@ -55,7 +54,9 @@
   display: block;
 }
 
-.footer .bottom-footer .bottom-inner .kepco-con .kepco-txt{}
+.footer .bottom-footer .bottom-inner .kepco-con .kepco-txt{
+  font-size: 14px;
+}
 
 .footer .bottom-footer .bottom-inner .mark{
   flex: 0 0 176px;

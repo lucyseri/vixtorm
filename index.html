@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>한국전력배구단</title>
+	<script src="js/js_sign.js" defer></script>
+	<script src="js/js_index.js" defer></script>
 	<script src="js/jq_header.js" defer></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/js_index.js" defer></script>
 	<link rel="stylesheet" href="css/pages/index.css">
 </head>
 
@@ -75,7 +76,7 @@
 					<div class="login popup">
 						<div class="login-con">
 							<span class="login out">X</span>
-							<form action="#">
+							<form action="#" id="loginForm" method="post">
 								<ul>
 									<li>
 										<label for="userEmail">이메일</label>
@@ -86,7 +87,7 @@
 										<input type="text" name="userPw" id="userPw">
 									</li>
 									<li>
-										<button type="button">로그인</button>
+										<button type="button" class="login">로그인</button>
 									</li>
 								</ul>
 							</form>
@@ -98,7 +99,7 @@
 					<div class="join popup">
 						<div class="join-con">
 							<span class="join out">X</span>
-							<form action="#">
+							<form action="#" id="joinForm" method="post">
 								<ul>
 									<li>
 										<label for="userName">이름</label>
@@ -107,6 +108,7 @@
 									<li>
 										<label for="userPhone">전화번호</label>
 										<select name="userPhone" id="userPhone">
+											<option value="" selected>선택</option>
 											<option value="010">010</option>
 											<option value="011">011</option>
 										</select>
@@ -125,7 +127,7 @@
 										<input type="text" name="userPw2" id="userPw2">
 									</li>
 									<li>
-										<button>회원가입</button>
+										<button class="join" type="button">회원가입</button>
 									</li>
 								</ul>
 							</form>
@@ -161,7 +163,7 @@
 							<div class="sec-con">
 								<div class="title">
 									<h2>경기일정/결과</h2>
-									<div class="btn"></div>
+									<div class="btn">+</div>
 								</div>
 								<div class="sec2-con">
 									<div class="left arrow-btn">
@@ -495,7 +497,7 @@
 							<div class="sec-con">
 								<div class="title">
 									<h2>포토갤러리</h2>
-									<div class="btn"></div>
+									<div class="btn">+</div>
 								</div>
 								<div class="photo-gallery">
 									<ul>
@@ -548,7 +550,7 @@
 							<div class="sec-con">
 								<div class="title">
 									<h2>선수단</h2>
-									<div class="btn"></div>
+									<div class="btn">+</div>
 								</div>
 								<div class="card-slide">
 									<div class="left slide-arrow">
@@ -557,16 +559,16 @@
 									<div class="sec4-slide">
 										<div class="card-con">
 											<ul>
-												<li></li>
-												<li></li>
-												<li class="sec4Animation"></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
-												<li></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li class="sec4Animation"><a href="#" class="sec4PlayerAni"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
 											</ul>
 										</div>
 									</div>
@@ -593,10 +595,10 @@
 										</div>
 										<div class="facebook icon">
 											<img src="img/facebook.png" alt="facebook">
-											<a href="#">수원 한국전력 빅스톰배구단</a>
+											<a href="#">수원 <br> 한국전력 빅스톰배구단</a>
 										</div>
 										<div class="naver icon">
-											<img src="" alt="naver">
+											<img src="img/naver.png" alt="naver">
 											<a href="#">한국전력 빅스톰 배구단</a>
 										</div>
 									</div>

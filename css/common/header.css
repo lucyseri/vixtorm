@@ -66,7 +66,7 @@
   display: block;
   width: 0;
   height: 0;
-  border-bottom: 10px solid rgb(0, 0, 0);
+  border-bottom: 10px solid rgb(255, 0, 0);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   position: absolute;
@@ -82,9 +82,10 @@
   left: 50%;
   transform: translateX(-50%);
   display: none;
-  background-color: rgb(0, 0, 0);
+  background-color: #f4f4f4;
   transition: all 0.2s;
   padding: 0 0 20px;
+  border-top: 3px solid #f00;
 }
 
 .header .inner-header .nav .gnb ul li:hover ul.sub {
@@ -97,7 +98,7 @@
 }
 
 .header .inner-header .nav .gnb ul>li ul.sub li a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
 }
 
@@ -166,7 +167,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 90;
   padding: 100px;
   box-sizing: border-box;
   position: fixed;
@@ -190,11 +191,16 @@
 .header .inner-header .nav .popup span.out{
   display: block;
   width: 50px;
-  height: 50px;
+  line-height: 50px;
   margin: 0 auto;
-  border: 1px solid rgb(0, 0, 0);
-  box-sizing: border-box;
   text-align: center;
+  color: #f00;
+  font-weight: bold;
+  font-size: 25px;
+}
+.header .inner-header .nav .popup span.out:hover{
+  color: #fff;
+  background-color: #f00;
 }
 
 .header .inner-header .nav .popup .login-con{
@@ -221,7 +227,7 @@
 .header .inner-header .nav .popup .login-con form ul li input{
   flex: 0 1 200px;
   height: 40px;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   outline: 0;
   border: 0;
 }
@@ -230,9 +236,10 @@
   font-size: 18px;
   padding: 10px 0;
   box-sizing: border-box;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   outline: 0;
   border: 0;
+  border-top: 3px solid #f00;
 }
 .header .inner-header .nav .popup .login-con .search{
   width: 100%;
@@ -270,7 +277,7 @@
 .header .inner-header .nav .popup .join-con form ul li input:not(input#userPhone){
   flex: 0 1 200px;
   height: 40px;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   outline: 0;
   border: 0;
 }
@@ -280,7 +287,7 @@
 .header .inner-header .nav .popup .join-con form ul li:nth-child(2) input{
   width: 130px;
   height: 40px;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   outline: 0;
   border: 0;
   font-size: 12px;
@@ -291,9 +298,10 @@
   font-size: 18px;
   padding: 10px 0;
   box-sizing: border-box;
-  background-color: aliceblue;
+  background-color: #f4f4f4;
   outline: 0;
   border: 0;
+  border-top: 3px solid #f00;
 }
 
 

@@ -261,6 +261,11 @@ const sec4CardSlide=document.querySelector('.card-con');
 const sec4CardSlideUl=sec4CardSlide.querySelector('ul');
 const sec4CardSlideUlLi=sec4CardSlideUl.querySelectorAll('li');
 
+const playerNameArr=[
+  'N.01 서재덕L', 'N.02 이민욱S', 'N.03 박철우R', 'N.05 오재성Li', 'N.06 황동일S', 
+  'N.07 이시몬L', 'N.08 김강녕Li', 'N.10 김지한L', 'N.14 임성진L', 'N.15 김광국S'
+];
+
 const gap4=sec4CardSlideUlLi[1].offsetLeft - sec4CardSlideUlLi[0].offsetLeft;
 
 
@@ -282,8 +287,10 @@ sec4leftArrow.addEventListener('click', e => {
   sec4CardSlideUlLi.forEach((el, idx)=>{
     if(idx==startNum){
       el.classList.add('sec4Animation');
+      el.children[0].classList.add('sec4PlayerAni')
     }else{
       el.classList.remove('sec4Animation');
+      el.children[0].classList.remove('sec4PlayerAni')
     }
   })
   
@@ -312,6 +319,7 @@ sec4rightArrow.addEventListener('click', e => {
 
 sec4CardSlideUlLi.forEach((el, idx)=>{
   el.style.background=`url(img/p${idx}.png) no-repeat 50%/contain`;
+  el.children[0].innerText=playerNameArr[idx];
 })
 
 //section5
