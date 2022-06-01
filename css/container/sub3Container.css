@@ -1,0 +1,29 @@
+.header{
+    position: static;
+}
+
+.sub3-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center
+}
+.sub3-container .result{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.sub3-container .result .game{
+    width: 100%;
+    height: inherit;
+    background-color: rgb(49, 161, 165);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+
+} 
+.playoff{
+    display: block !important;
+}
