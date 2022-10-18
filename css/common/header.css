@@ -10,7 +10,7 @@
 }
 
 .header .inner-header .nav {
-  flex: 0 1 1400px;
+  flex: 0 0 1400px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -30,7 +30,7 @@
 
 
 .header .inner-header .nav .gnb {
-  flex: 0 1 680px;
+  flex: 0 0 680px;
 }
 
 .header .inner-header .nav .gnb ul {
@@ -107,7 +107,7 @@
 
 
 .header .inner-header .nav .goto {
-  flex: 0 1 320px;
+  flex: 0 0 320px;
   padding: 10px 0;
 }
 
@@ -153,16 +153,9 @@
   transition:all 0.3s;
   background-color: rgba(0, 0, 0, 0.404);
   width: 100vw;
-  
   height: 0;
   visibility:hidden;
   opacity: 0;
-  /*
-  height: 100vh;
-  visibility:visible;
-  opacity: 1;
-  */
-  
 }
 
 .header .inner-header .nav .popup span.out{
@@ -182,7 +175,7 @@
 }
 
 .header .inner-header .nav .popup .login-con{
-  flex: 0 1 400px;
+  flex: 0 0 400px;
   background-color: #fff;
   box-sizing: border-box;
   padding: 40px;
@@ -230,7 +223,7 @@
 }
 
 .header .inner-header .nav .popup .join-con{
-  flex: 0 1 400px;
+  flex: 0 0 400px;
   height: auto;
   box-sizing: border-box;
   padding: 40px;
@@ -253,7 +246,7 @@
   line-height: 40px;
 }
 .header .inner-header .nav .popup .join-con form ul li input:not(input#userPhone){
-  flex: 0 1 200px;
+  flex: 0 0 200px;
   height: 40px;
   background-color: #f4f4f4;
   outline: 0;
@@ -281,8 +274,6 @@
   border: 0;
   border-top: 3px solid #f00;
 }
-
-
 
 .popupSign{
   height: 100vh !important;

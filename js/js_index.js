@@ -310,8 +310,10 @@ sec4rightArrow.addEventListener('click', e => {
   sec4CardSlideUlLi.forEach((el, idx)=>{
     if(idx==startNum){
       el.classList.add('sec4Animation');
+      el.children[0].classList.add('sec4PlayerAni')
     }else{
       el.classList.remove('sec4Animation');
+      el.children[0].classList.remove('sec4PlayerAni')
     }
   })
 
