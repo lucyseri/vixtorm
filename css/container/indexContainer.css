@@ -25,36 +25,36 @@
 }
 
 
-.container{
+main{
   width: 100%;
   height: auto;
   background-color: #f4f4f4;
 }
 /* section1 */
-.container .inner-container .index-container .sections .section.sec1{
+main .inner-container .index-container .sections section.sec1{
   width: 100%;
   height: auto;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con{
+main .inner-container .index-container .sections section.sec1 .sec-con{
   width: 100%;
   height: 800px;
   position: relative;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con h2{
+main .inner-container .index-container .sections section.sec1 .sec-con h2{
   display: none;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .gallery{
+main .inner-container .index-container .sections section.sec1 .sec-con .gallery{
   width: 100%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .gallery ul{
+main .inner-container .index-container .sections section.sec1 .sec-con .gallery ul{
   width: 100%;
   height: inherit;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .gallery ul li{
+main .inner-container .index-container .sections section.sec1 .sec-con .gallery ul li{
   width: 100%;
   height: inherit;
   position: absolute;
@@ -69,7 +69,7 @@
   opacity: 1 !important;
 }
 
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon{
   width: 100%;
   height: auto;
   position: absolute;
@@ -80,19 +80,19 @@
   padding: 20px 0;
   box-sizing: border-box;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.btn{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon span.btn{
   display: block;
   box-sizing: border-box;
   cursor: pointer;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.left.btn{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon span.left.btn{
   width: 0;
   height: 0;
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
   border-right: 8px solid rgb(255, 255, 255);
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.right.btn{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon span.right.btn{
   width: 0;
   height: 0;
   border-bottom: 8px solid transparent;
@@ -100,14 +100,14 @@
   border-left: 8px solid rgb(255, 255, 255);
 
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.stop.btn{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon span.stop.btn{
   width: 15px;
   height: 15px;
   border-left: 4px solid #fff;
   border-right: 4px solid #fff;
   margin-right: 20px;
 }
-.container .inner-container .index-container .sections .section.sec1 .sec-con .bcon span.start.btn{
+main .inner-container .index-container .sections section.sec1 .sec-con .bcon span.start.btn{
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -116,24 +116,24 @@
 }
 
 /* section2 */
-.container .inner-container .index-container .sections .section.sec2{
+main .inner-container .index-container .sections section.sec2{
   padding: 60px 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con{
-  flex: 0 0 1460px;
+main .inner-container .index-container .sections section.sec2 .sec-con{
+  flex: 0 0 1500px;
   height: auto;
 }
 
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con{
   margin: 40px 0;
   height: 440px;
   display: flex;
   justify-content: space-between;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .arrow-btn{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .arrow-btn{
   flex: 0 0 30px;
   height: inherit;
   display: flex;
@@ -141,39 +141,40 @@
   align-items: center;
   background-color: #f4f4f4;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .arrow-btn span.arrow{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .arrow-btn span.arrow{
   width: 30px;
   height: 30px;
   border-top: 3px solid;
   border-right: 3px solid;
   box-sizing: border-box;
+  cursor: pointer;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .left.arrow-btn span.arrow.left{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .left.arrow-btn span.arrow.left{
   transform: rotate(225deg);
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .right.arrow-btn span.arrow.right{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .right.arrow-btn span.arrow.right{
   transform: rotate(45deg);
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide{
   flex: 0 0 1400px;
   height: inherit;
   overflow: hidden;
   position: relative;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con{
   width: 305.7142%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul{
   height: inherit;
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
   flex: 0 0 320px;
   height: inherit;
   background-color: rgb(255, 255, 255);
@@ -181,17 +182,17 @@
   padding: 40px;
   box-sizing: border-box;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
   text-align: center;
   font-size: 14px;
   line-height: 20px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
   width: 100%;
   height: auto;
   margin: 40px 0;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.date{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.date{
   width: 100%;
   height: auto;
   text-align: center;
@@ -199,54 +200,54 @@
   font-weight: 700;
   font-size: 18px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
   width: 100%;
   height: auto;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .home-emblem{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .home-emblem{
   flex: 0 0 100px;
   height: inherit;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
   flex: 0 0 40px;
   text-align: center;
   font-size: 20px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
   flex: 0 0 100px;
   height: inherit;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem img{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem img{
   width: 100%;
   height: auto;
   display: block;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team{
   display: flex;
   justify-content: space-between;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score{
   flex: 0 0 100px;
   text-align: center;
   margin: 20px 0;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .scoer p.team-name{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .scoer p.team-name{
   width: 100%;
   text-align: center;
   line-height: 40px;
   font-size: 18px;
 }
-.container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
+main .inner-container .index-container .sections section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
   width: 100%;
   text-align: center;
   line-height: 40px;
@@ -256,15 +257,15 @@
 
 
 /* section3 */
-.container .inner-container .index-container .sections .section.sec3{
+main .inner-container .index-container .sections section.sec3{
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con{
+main .inner-container .index-container .sections section.sec3 .sec-con{
   flex: 0 0 1400px;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery{
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery{
   margin: 40px 0;
 }
 .sec3Animation{
@@ -283,52 +284,52 @@
   }
 }
 
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul{
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, minmax(200px, auto));
   grid-auto-rows: minmax(200px, auto);
   gap: 5px;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li{
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li{
   box-sizing: border-box;
   background-color: #000;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(1){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(1){
   grid-area: 1/1/4/3;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(2){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(2){
   grid-area: 1/3/2/5;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(3){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(3){
   grid-area: 1/5/2/6;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(4){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(4){
   grid-area: 1/6/3/7;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(5){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(5){
   grid-area: 2/3/3/4;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(6){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(6){
   grid-area: 2/4/4/6;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(7){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(7){
   grid-area: 3/3/4/4;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li:nth-child(8){
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li:nth-child(8){
   grid-area: 3/6/4/7;
 }
 
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li .gallery-img{
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li .gallery-img{
   width: 100%;
   height: 100%;
   opacity: 0.6;
   object-fit: cover;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
+main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
   opacity: 1;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,14 +348,14 @@
   opacity: 1 !important;
   z-index: 90;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con{
   flex: 0 0 800px;
   height: 700px;
   position: relative;
   top: 0;
   left: 0;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con span.box-out{
   display: block;
   width: 50px;
   line-height: 50px;
@@ -370,22 +371,22 @@
   font-size: 25px;
   font-weight: bold;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con span.box-out:hover{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con span.box-out:hover{
   color: #fff;
   background-color: #f00;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .box-gallery{
   width: 100%;
   height: inherit;
   position: absolute;
   left: 0;
   top: 0;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery ul{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .box-gallery ul{
   width: 100%;
   height: inherit;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .box-gallery ul li{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .box-gallery ul li{
   width: 100%;
   height: inherit;
   position: absolute;
@@ -393,7 +394,7 @@
   left: 0;
   background-color: #000;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .center-btn{
   width: 100%;
   height: auto;
   position: absolute;
@@ -405,20 +406,20 @@
   display: flex;
   justify-content: space-between;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
   width: 30px;
   height: 30px;
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
   box-sizing: border-box;
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.left{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.left{
   transform: rotate(225deg);
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.right{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.right{
   transform: rotate(45deg);
 }
-.container .inner-container .index-container .sections .section.sec3 .sec-con .light-box .box-con a{
+main .inner-container .index-container .sections section.sec3 .sec-con .light-box .box-con a{
   width: 100%;
   height: auto;
   text-align: center;
@@ -432,74 +433,83 @@
 }
 
 /* section4 */
-.container .inner-container .index-container .sections .section.sec4{
+main .inner-container .index-container .sections section.sec4{
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   padding: 40px 0;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con{
-  flex: 0 0 1460px;
+main .inner-container .index-container .sections section.sec4 .sec-con{
+  flex: 0 0 1500px;
   height: auto;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide{
   width: 100%;
   height: 404px;
   margin: 40px 0;
   display: flex;
   justify-content: space-between;  
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .slide-arrow{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .slide-arrow{
   flex: 0 0 30px;
   height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
+  cursor: pointer;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .slide-arrow span.sec4Arrow{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .slide-arrow span.sec4Arrow{
   width: 30px;
   height: 30px;
   border-top: 3px solid;
   border-right: 3px solid;
   box-sizing: border-box;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .slide-arrow span.left.sec4Arrow{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .slide-arrow span.left.sec4Arrow{
   transform: rotate(225deg);
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .slide-arrow span.right.sec4Arrow{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .slide-arrow span.right.sec4Arrow{
   transform: rotate(45deg);
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide{
   flex: 0 0 1400px;
   height: inherit;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide .card-con{
   width: 200%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con ul{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide .card-con ul{
   width: 100%;
   height: inherit;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li{
   flex: 0 0 264px;
   height: inherit;
   transform: scale(0.8);
   opacity: 0.6;
   position: relative;
 }
-.container .inner-container .index-container .sections .section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li img{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .inner-container .index-container .sections section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
   width: 100%;
   height: auto;
   text-align: center;
@@ -523,7 +533,7 @@
 }
 
 /*section5*/
-.container .inner-container .index-container .sections .section.sec5{
+main .inner-container .index-container .sections section.sec5{
   width: 100%;
   height: auto;
   display: flex;
@@ -531,18 +541,18 @@
   padding: 60px 0;
   background-color: #fff;
 }
-.container .inner-container .index-container .sections .section.sec5 .sec-con{
+main .inner-container .index-container .sections section.sec5 .sec-con{
   flex: 0 0 1400px;
   height: auto;
 }
-.container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon{
+main .inner-container .index-container .sections section.sec5 .sec-con .sns-icon{
   margin: 40px 0;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
 }
-.container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon .icon{
+main .inner-container .index-container .sections section.sec5 .sec-con .sns-icon .icon{
   flex: 0 0 320px;
   padding: 40px 60px;
   box-sizing: border-box;
@@ -551,12 +561,12 @@
   align-items: center;
   background-color: #f4f4f4;
 }
-.container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon .icon img{
+main .inner-container .index-container .sections section.sec5 .sec-con .sns-icon .icon img{
   width: 40%;
   height: auto;
   display: block;
 }
-.container .inner-container .index-container .sections .section.sec5 .sec-con .sns-icon .icon a{
+main .inner-container .index-container .sections section.sec5 .sec-con .sns-icon .icon a{
   text-align: center;
   line-height: 20px;
   margin-top: 20px;

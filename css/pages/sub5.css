@@ -3,6 +3,6 @@
 @import url(../common/footer.css);
 @import url(../container/sub5Container.css);
 
-.header{
+header{
   border-bottom: 1px solid #ccc;
 }

@@ -197,6 +197,7 @@ const boxOut=document.querySelector('span.box-out');
 const centerBtn=boxCon.querySelector('.center-btn');
 const sec3Arrow=centerBtn.querySelectorAll('span.sec3arrow');
 
+
 const arrBg3=[];
 for(let i=0;i<galleryImg.length;i++){
   arrBg3.push(`url(img/sec3_${i}_0.jpg) no-repeat 50%/cover`);
@@ -279,10 +280,10 @@ sec4leftArrow.addEventListener('click', e => {
   sec4CardSlideUlLi.forEach((el, idx)=>{
     if(idx==startNum){
       el.classList.add('sec4Animation');
-      el.children[0].classList.add('sec4PlayerAni')
+      el.children[1].classList.add('sec4PlayerAni')
     }else{
       el.classList.remove('sec4Animation');
-      el.children[0].classList.remove('sec4PlayerAni')
+      el.children[1].classList.remove('sec4PlayerAni')
     }
   })
   
@@ -302,19 +303,17 @@ sec4rightArrow.addEventListener('click', e => {
   sec4CardSlideUlLi.forEach((el, idx)=>{
     if(idx==startNum){
       el.classList.add('sec4Animation');
-      el.children[0].classList.add('sec4PlayerAni')
+      el.children[1].classList.add('sec4PlayerAni')
     }else{
       el.classList.remove('sec4Animation');
-      el.children[0].classList.remove('sec4PlayerAni')
+      el.children[1].classList.remove('sec4PlayerAni')
     }
   })
 
 })
 
 sec4CardSlideUlLi.forEach((el, idx)=>{
-  el.style.background=`url(img/p${idx}.png) no-repeat 50%/contain`;
-  el.children[0].innerText=playerNameArr[idx];
+  el.children[0].setAttribute('alt', `${playerNameArr[idx]}`)
+  el.children[1].innerText=playerNameArr[idx];
 })
-
-//section5
 
