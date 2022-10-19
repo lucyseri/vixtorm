@@ -6,8 +6,8 @@
 .title h2{
   margin-right: 10px;
   line-height: 40px;
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 30px;
+  font-weight: 700;
 }
 .title .btn{
   width: 40px;
@@ -16,7 +16,7 @@
   text-align: center;
   color: #f00;
   font-size: 35px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
 }
 .title .btn:hover{
   color: #fff;
@@ -39,6 +39,9 @@
   width: 100%;
   height: 800px;
   position: relative;
+}
+.container .inner-container .index-container .sections .section.sec1 .sec-con h2{
+  display: none;
 }
 .container .inner-container .index-container .sections .section.sec1 .sec-con .gallery{
   width: 100%;
@@ -182,7 +185,6 @@
   text-align: center;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
   width: 100%;
@@ -190,12 +192,11 @@
   margin: 40px 0;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.date{
-  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: auto;
   text-align: center;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
 }
 .container .inner-container .index-container .sections .section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
@@ -559,5 +560,5 @@
   text-align: center;
   line-height: 20px;
   margin-top: 20px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
 }

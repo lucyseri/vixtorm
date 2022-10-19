@@ -107,40 +107,32 @@ const awayEmblem=document.querySelectorAll('.away-emblem');
 const homeScore=document.querySelectorAll('.home.score');
 const awayScore=document.querySelectorAll('.away.score');
 
-const roundArr=[
-  '준결승', '준준결승', '6ROUND', '6ROUND', '6ROUND', '6ROUND',
-  '6ROUND', '6ROUND', '5ROUND', '5ROUND', '5ROUND', '5ROUND'
-];
-const gamedayDateArr=[
-  '2022.04.03 PM 19:00', '2022.04.01 PM 19:00', '2022.03.30 PM 19:00','2022.03.27 PM 14:00',
+const sec2Info={
+  sec2round: ['준결승', '준준결승', '6ROUND', '6ROUND', '6ROUND', '6ROUND',
+  '6ROUND', '6ROUND', '5ROUND', '5ROUND', '5ROUND', '5ROUND'],
+
+  sec2gamedate: ['2022.04.03 PM 19:00', '2022.04.01 PM 19:00', '2022.03.30 PM 19:00','2022.03.27 PM 14:00',
   '2022.03.24 PM 19:00', '2022.03.19 PM 14:00', '2022.03.15 PM 19:00', '2022.03.12 PM 14:00',
-  '2022.03.09 PM 14:00', '2022.03.06 PM 14:00', '2022.02.12 PM 14:00', '2022.02.08 PM 19:00'
-];
-const gamedayPlaceArr=[
-  '의정부실내체육관', '서울장충체육관', '의정부실내체육관', '수원실내체육관',
+  '2022.03.09 PM 14:00', '2022.03.06 PM 14:00', '2022.02.12 PM 14:00', '2022.02.08 PM 19:00'],
+
+  sec2gameplace: ['의정부실내체육관', '서울장충체육관', '의정부실내체육관', '수원실내체육관',
   '천안유관순체육관', '수원실내체육관', '안산상록수체육관', '수원실내체육관',
-  '인천계양체육관', '수원실내체육관', '수원실내체육관', '서울장충체육관'
-];
-const homeTeamArr=[
-  'KB손해보험', '우리카드', 'KB손해보험', '한국전력', '현대캐피탈', '한국전력',
-  'OK금융그룹', '한국전력', '대한항공', '한국전력', '한국전력', '우리카드'
-];
-const homeTeamImgArr=[
-  'kb', 'wc', 'kb', 'kc', 'hd', 'kc', 'ok', 'kc', 'ka', 'kc', 'kc', 'wc'
-]
-const homeScoreArr=[
-  '3', '1', '1', '1', '0', '3', '1', '3','3', '3','3', '3'
-];
-const awayTeamArr=[
-  '한국전력', '한국전력', '한국전력', '우리카드', '한국전력', '대한항공',
-  '한국전력', '삼성화재', '한국전력', '현대캐피탈', 'KB손해보험', '한국전력'
-];
-const awayTeamImgArr=[
-  'kc', 'kc', 'kc', 'wc', 'kc', 'ka', 'kc', 'ss', 'kc', 'hd', 'kb', 'kc'
-]
-const awayScoreArr=[
-  '1','3', '3','3', '3', '1', '3', '0', '2', '2', '2', '1'
-];
+  '인천계양체육관', '수원실내체육관', '수원실내체육관', '서울장충체육관'],
+
+  sec2hometeam: ['KB손해보험', '우리카드', 'KB손해보험', '한국전력', '현대캐피탈', '한국전력',
+  'OK금융그룹', '한국전력', '대한항공', '한국전력', '한국전력', '우리카드'],
+
+  sec2homeimg: ['kb', 'wc', 'kb', 'kc', 'hd', 'kc', 'ok', 'kc', 'ka', 'kc', 'kc', 'wc'],
+
+  sec2homescore: ['3', '1', '1', '1', '0', '3', '1', '3','3', '3','3', '3'],
+
+  sec2awayteam: ['한국전력', '한국전력', '한국전력', '우리카드', '한국전력', '대한항공',
+  '한국전력', '삼성화재', '한국전력', '현대캐피탈', 'KB손해보험', '한국전력'],
+
+  sec2awayimg: ['kc', 'kc', 'kc', 'wc', 'kc', 'ka', 'kc', 'ss', 'kc', 'hd', 'kb', 'kc'],
+
+  sec2awayscore: ['1','3', '3','3', '3', '1', '3', '0', '2', '2', '2', '1'],
+}
 
 const sec2gap=sec2slideConUlLi[4].offsetLeft-sec2slideConUlLi[0].offsetLeft;
 
@@ -174,18 +166,18 @@ function sec2slideFn(e){
   }
 }
 
-for(let j=0;j<sec2slideConUlLi.length;j++){
-  round[j].innerText=roundArr[j];
-  gameday[j].firstElementChild.innerText=gamedayDateArr[j];
-  gameday[j].lastElementChild.innerText=gamedayPlaceArr[j];
-  homeEmblem[j].firstElementChild.setAttribute('src', `img/${homeTeamImgArr[j]}.png`);
-  awayEmblem[j].firstElementChild.setAttribute('src', `img/${awayTeamImgArr[j]}.png`);
-  homeScore[j].firstElementChild.innerText=homeTeamArr[j];
-  homeScore[j].lastElementChild.innerText=homeScoreArr[j];
-  awayScore[j].firstElementChild.innerText=awayTeamArr[j];
-  awayScore[j].lastElementChild.innerText=awayScoreArr[j];
-}
 
+for(let j=0; j<sec2slideConUlLi.length;j++){
+  round[j].innerText=sec2Info.sec2round[j];
+  gameday[j].firstElementChild.innerText=sec2Info.sec2gamedate[j];
+  gameday[j].lastElementChild.innerText=sec2Info.sec2gameplace[j];
+  homeEmblem[j].firstElementChild.setAttribute('src', `img/${sec2Info.sec2homeimg[j]}.png`);
+  awayEmblem[j].firstElementChild.setAttribute('src', `img/${sec2Info.sec2awayimg[j]}.png`);
+  homeScore[j].firstElementChild.innerText=sec2Info.sec2hometeam[j];
+  homeScore[j].lastElementChild.innerText=sec2Info.sec2homescore[j];
+  awayScore[j].firstElementChild.innerText=sec2Info.sec2awayteam[j];
+  awayScore[j].lastElementChild.innerText=sec2Info.sec2awayscore[j];
+}
 
 
 //section3

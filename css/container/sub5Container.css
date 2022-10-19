@@ -1,28 +1,122 @@
-.container{
+.container {
   width: 100%;
   height: auto;
 }
-.container .inner-container{
+
+.container .inner-container {
   display: flex;
   justify-content: center;
   padding: 60px 0;
 }
-.container .inner-container .sub5-container{
-  flex: 0 0 1400px;
+
+.container .inner-container .sub5-container {
+  flex: 0 0 1240px;
 }
-.container .inner-container .sub5-container table{
+
+.container .inner-container .sub5-container table,thead,tbody,tr {
+  border: none;
+}
+
+.container .inner-container .sub5-container table {
   width: 100%;
+  border: none;
+  text-align: center;
 }
-.container .inner-container .sub5-container table tbody tr td{
-  padding: 10px;
-  box-sizing: border-box;
+
+.container .inner-container .sub5-container table colgroup col.col1 {
+  width: 80px;
 }
-.container .inner-container .sub5-container table thead th{
-  line-height: 30px;
-  font-size: 18px;
+
+.container .inner-container .sub5-container table colgroup col.col2 {
+  width: 150px;
 }
-.container .inner-container .sub5-container table caption{
+
+.container .inner-container .sub5-container table colgroup col.col3 {
+  width: 100px;
+}
+
+.container .inner-container .sub5-container table caption {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 40px;
+}
+
+.container .inner-container .sub5-container table thead tr th {
+  border-top: 3px solid #f00;
+  border-bottom: 2px solid #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 15px 0;
+}
+
+.container .inner-container .sub5-container table tbody tr td {
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.container .inner-container .sub5-container table tbody tr:hover {
+  background-color: #f4f4f4;
+}
+
+.container .inner-container .sub5-container .search-form{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.container .inner-container .sub5-container .search-form form{
+  flex: 0 0 330px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .inner-container .sub5-container .search-form form select{
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: inherit;
+}
+.container .inner-container .sub5-container .search-form form input[type="text"]{
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: inherit;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.container .inner-container .sub5-container .search-form form input[type="submit"]{
+  display: inline-block;
+  height: inherit;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+.container .inner-container .sub5-container .paging {
+  width: 100%;
+  padding: 20px 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.container .inner-container .sub5-container .paging a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+}
+
+.container .inner-container .sub5-container .paging a:hover {
+  background-color: #f4f4f4;
 }

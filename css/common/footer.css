@@ -54,7 +54,10 @@
   display: block;
 }
 
-.footer .bottom-footer .bottom-inner .kepco-con .kepco-txt{
+.footer .bottom-footer .bottom-inner .kepco-con address{
+  font-style: normal;
+}
+.footer .bottom-footer .bottom-inner .kepco-con address p{
   font-size: 14px;
 }
 
