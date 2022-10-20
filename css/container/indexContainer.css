@@ -326,9 +326,17 @@ main .inner-container .index-container .sections section.sec3 .sec-con .photo-ga
   opacity: 0.6;
   object-fit: cover;
 }
+.ir-pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
 main .inner-container .index-container .sections section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
   opacity: 1;
 }
+
 main .inner-container .index-container .sections section.sec3 .sec-con .light-box{
   display: flex;
   justify-content: center;
