@@ -3,45 +3,45 @@ main {
   height: auto;
 }
 
-main .inner-container {
+main section {
   display: flex;
   justify-content: center;
   padding: 60px 0;
 }
 
-main .inner-container .sub5-container {
+main  section .inner-container {
   flex: 0 0 1240px;
 }
 
-main .inner-container .sub5-container table,thead,tbody,tr {
+main  section .inner-container table,thead,tbody,tr {
   border: none;
 }
 
-main .inner-container .sub5-container table {
+main  section .inner-container table {
   width: 100%;
   border: none;
   text-align: center;
 }
 
-main .inner-container .sub5-container table colgroup col.col1 {
+main  section .inner-container table colgroup col.col1 {
   width: 80px;
 }
 
-main .inner-container .sub5-container table colgroup col.col2 {
+main  section .inner-container table colgroup col.col2 {
   width: 150px;
 }
 
-main .inner-container .sub5-container table colgroup col.col3 {
+main  section .inner-container table colgroup col.col3 {
   width: 100px;
 }
 
-main .inner-container .sub5-container table caption {
+main  section .inner-container table caption {
   font-size: 35px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-main .inner-container .sub5-container table thead tr th {
+main  section .inner-container table thead tr th {
   border-top: 3px solid #f00;
   border-bottom: 2px solid #ccc;
   border-left: none;
@@ -49,7 +49,7 @@ main .inner-container .sub5-container table thead tr th {
   padding: 15px 0;
 }
 
-main .inner-container .sub5-container table tbody tr td {
+main  section .inner-container table tbody tr td {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #ccc;
@@ -59,29 +59,29 @@ main .inner-container .sub5-container table tbody tr td {
   font-weight: 300;
 }
 
-main .inner-container .sub5-container table tbody tr:hover {
+main  section .inner-container table tbody tr:hover {
   background-color: #f4f4f4;
 }
 
-main .inner-container .sub5-container .search-form{
+main  section .inner-container .search-form{
   display: flex;
   justify-content: center;
   padding: 20px 0;
 }
-main .inner-container .sub5-container .search-form form{
+main  section .inner-container .search-form form{
   flex: 0 0 330px;
   height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .inner-container .sub5-container .search-form form select{
+main  section .inner-container .search-form form select{
   outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   height: inherit;
 }
-main .inner-container .sub5-container .search-form form input[type="text"]{
+main  section .inner-container .search-form form input[type="text"]{
   outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -89,7 +89,7 @@ main .inner-container .sub5-container .search-form form input[type="text"]{
   padding: 0 10px;
   box-sizing: border-box;
 }
-main .inner-container .sub5-container .search-form form input[type="submit"]{
+main  section .inner-container .search-form form input[type="submit"]{
   display: inline-block;
   height: inherit;
   outline: none;
@@ -100,7 +100,7 @@ main .inner-container .sub5-container .search-form form input[type="submit"]{
   background-color: #f4f4f4;
 }
 
-main .inner-container .sub5-container .paging {
+main  section .inner-container .paging {
   width: 100%;
   padding: 20px 0 40px;
   box-sizing: border-box;
@@ -108,7 +108,7 @@ main .inner-container .sub5-container .paging {
   justify-content: center;
 }
 
-main .inner-container .sub5-container .paging a {
+main  section .inner-container .paging a {
   display: block;
   width: 30px;
   height: 30px;
@@ -117,6 +117,6 @@ main .inner-container .sub5-container .paging a {
   line-height: 30px;
 }
 
-main .inner-container .sub5-container .paging a:hover {
+main  section .inner-container .paging a:hover {
   background-color: #f4f4f4;
 }
