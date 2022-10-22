@@ -13,6 +13,7 @@ html,body {
 
 body {
 	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
 }
 
 a {
@@ -27,4 +28,8 @@ ul,li {
 table,th,td {
 	border: 1px solid;
 	border-collapse: collapse;
+}
+
+:root{
+	--main-background-color: #f4f4f4;
 }

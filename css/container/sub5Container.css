@@ -60,7 +60,7 @@ main  section .inner-container table tbody tr td {
 }
 
 main  section .inner-container table tbody tr:hover {
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }
 
 main  section .inner-container .search-form{
@@ -97,7 +97,7 @@ main  section .inner-container .search-form form input[type="submit"]{
   border-radius: 5px;
   padding: 0 10px;
   cursor: pointer;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }
 
 main  section .inner-container .paging {
@@ -118,5 +118,5 @@ main  section .inner-container .paging a {
 }
 
 main  section .inner-container .paging a:hover {
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }

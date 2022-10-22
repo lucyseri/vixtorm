@@ -26,7 +26,7 @@
 main{
   width: 100%;
   height: auto;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }
 /* section1 */
 main   section.sec1{
@@ -134,7 +134,6 @@ main   section.sec2 .sec-con .sec2-con .arrow-btn{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
 }
 main   section.sec2 .sec-con .sec2-con .arrow-btn span.arrow{
   width: 30px;
@@ -284,7 +283,7 @@ main   section.sec3 .sec-con .photo-gallery ul{
 }
 main   section.sec3 .sec-con .photo-gallery ul li{
   box-sizing: border-box;
-  background-color: #000;
+  background-color: rgb(255, 255, 255);
 }
 main   section.sec3 .sec-con .photo-gallery ul li:nth-child(1){
   grid-area: 1/1/4/3;
@@ -313,7 +312,7 @@ main   section.sec3 .sec-con .photo-gallery ul li:nth-child(8){
 main   section.sec3 .sec-con .photo-gallery ul li .gallery-img{
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
   object-fit: cover;
 }
 .ir-pm{
@@ -325,6 +324,7 @@ main   section.sec3 .sec-con .photo-gallery ul li .gallery-img{
 }
 main   section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
   opacity: 1;
+  cursor: pointer;
 }
 main   section.sec3 .sec-con .light-box{
   display: flex;
@@ -453,7 +453,7 @@ main   section.sec4 .sec-con .card-slide .slide-arrow{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   cursor: pointer;
 }
 main   section.sec4 .sec-con .card-slide .slide-arrow span.sec4Arrow{
@@ -554,7 +554,7 @@ main   section.sec5 .sec-con .sns-icon .icon{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }
 main   section.sec5 .sec-con .sns-icon .icon img{
   width: 40%;

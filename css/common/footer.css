@@ -2,7 +2,7 @@
 footer{
   width: 100%;
   height: auto;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
 }
 footer::before{
   content: '';
@@ -13,7 +13,7 @@ footer::before{
 footer .top-footer{
   display: flex;
   justify-content: center;
-  box-shadow: 1px 1px 1px 0px #ccc ;
+  border-bottom: 1px solid #ccc;
 }
 footer .top-footer .top-inner{
   flex: 0 1 1400px;

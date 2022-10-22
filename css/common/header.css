@@ -76,7 +76,7 @@ header .inner-header nav .gnb ul>li ul.sub {
   left: 50%;
   transform: translateX(-50%);
   display: none;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   transition: all 0.2s;
   padding: 0 0 20px;
   border-top: 3px solid #f00;
@@ -168,7 +168,8 @@ header .inner-header nav .popup span.out{
   color: #f00;
   font-weight: bold;
   font-size: 25px;
-  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
 }
 header .inner-header nav .popup span.out:hover{
   color: #fff;
@@ -199,7 +200,7 @@ header .inner-header nav .popup .login-con form ul li label{
 header .inner-header nav .popup .login-con form ul li input{
   flex: 0 1 200px;
   height: 40px;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   outline: 0;
   border: 0;
 }
@@ -208,7 +209,7 @@ header .inner-header nav .popup .login-con form ul li button{
   font-size: 18px;
   padding: 10px 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   outline: 0;
   border: 0;
   border-top: 3px solid #f00;
@@ -249,7 +250,7 @@ header .inner-header nav .popup .join-con form ul li label{
 header .inner-header nav .popup .join-con form ul li input:not(input#userPhone){
   flex: 0 0 200px;
   height: 40px;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   outline: 0;
   border: 0;
 }
@@ -259,7 +260,7 @@ header .inner-header nav .popup .join-con form ul li select{
 header .inner-header nav .popup .join-con form ul li:nth-child(2) input{
   width: 130px;
   height: 40px;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   outline: 0;
   border: 0;
   font-size: 12px;
@@ -270,7 +271,7 @@ header .inner-header nav .popup .join-con form ul li button{
   font-size: 18px;
   padding: 10px 0;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  background-color: var(--main-background-color);
   outline: 0;
   border: 0;
   border-top: 3px solid #f00;
