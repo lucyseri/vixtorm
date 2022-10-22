@@ -71,15 +71,15 @@
         <div class="login popup">
           <div class="login-con">
             <span class="login out">X</span>
-            <form action="#" id="loginForm" method="post">
+            <form action="#" id="loginForm" method="post" autocomplete="off">
               <ul>
                 <li>
-                  <label for="userEmail">이메일</label>
-                  <input type="email" name="userEmail" id="userEmail">
+                  <label for="loginUserEmail">이메일</label>
+                  <input type="email" name="loginUserEmail" id="loginUserEmail">
                 </li>
                 <li>
-                  <label for="userPw">비밀번호</label>
-                  <input type="text" name="userPw" id="userPw">
+                  <label for="loginUserPw">비밀번호</label>
+                  <input type="text" name="loginUserPw" id="loginUserPw">
                 </li>
                 <li>
                   <button type="button" class="login">로그인</button>
@@ -94,28 +94,28 @@
         <div class="join popup">
           <div class="join-con">
             <span class="join out">X</span>
-            <form action="#" id="joinForm" method="post">
+            <form action="#" id="joinForm" method="post" autocomplete="off">
               <ul>
                 <li>
                   <label for="userName">이름</label>
                   <input type="text" name="userName" id="userName">
                 </li>
                 <li>
-                  <label for="userPhone">전화번호</label>
-                  <select name="userPhone" id="userPhone">
+                  <label for="userPhoneFront">전화번호</label>
+                  <select name="userPhoneFront" id="userPhoneFront">
                     <option value="" selected>선택</option>
                     <option value="010">010</option>
                     <option value="011">011</option>
                   </select>
-                  <input type="text" name="userPhone" id="userPhone" maxlength="8" placeholder="공백없이 숫자만 입력">
+                  <input type="text" name="userPhoneBack" id="userPhoneBack" maxlength="8" placeholder="공백없이 숫자만 입력">
                 </li>
                 <li>
-                  <label for="userEmail">이메일</label>
-                  <input type="email" name="userEmail" id="userEmail">
+                  <label for="joinUserEmail">이메일</label>
+                  <input type="email" name="joinUserEmail" id="joinUserEmail">
                 </li>
                 <li>
-                  <label for="userPw">비밀번호</label>
-                  <input type="text" name="userPw" id="userPw">
+                  <label for="joinUserPw">비밀번호</label>
+                  <input type="text" name="joinUserPw" id="joinUserPw">
                 </li>
                 <li>
                   <label for="userPw2">비밀번호확인</label>
