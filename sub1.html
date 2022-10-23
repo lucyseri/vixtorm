@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>홈코트</title>
+  <script src="js/js_sub1.js" defer></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f665936dbbcce4938e82ef88fc42d830"></script>
+  <script src="js/js_sign.js" defer></script>
   <script src="js/jq_header.js" defer></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="css/pages/sub1.css">
@@ -132,8 +135,43 @@
     </div>
   </header>
   <main>
-    <section>
-      
+    <section class="section1">
+      <h2>홈코트</h2>
+      <div class="sec-con">
+        <div class="home-img">
+          <img src="img/home.jpg" alt="home-img">
+        </div>
+        <div class="home-map">
+          <div id="map" style="width:100%;height:536px;"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <h2>홈코트 정보</h2>
+      <div class="sec-con">
+        <ul>
+          <li>
+            <span class="title">경기장 면적</span>
+            <span class="con">: 2.025</span>
+          </li>
+          <li>
+            <span class="title">개장</span>
+            <span class="con">: 1984년 10월</span>
+          </li>
+          <li>
+            <span class="title">관람석</span>
+            <span class="con">: 4,317석</span>
+          </li>
+          <li>
+            <span class="title">주소</span>
+            <span class="con">: 경기도 수원시 장안구 경수대로 893 수원 종합운동장 내 수원체육관</span>
+          </li>
+          <li>
+            <span class="title">주차</span>
+            <span class="con">: 정문 우측 일반 주차장</span>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
