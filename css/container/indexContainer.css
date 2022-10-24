@@ -371,6 +371,7 @@ main   section.sec3 .sec-con .light-box .box-con span.box-out{
 main   section.sec3 .sec-con .light-box .box-con span.box-out:hover{
   color: #fff;
   background-color: #f00;
+  cursor: pointer;
 }
 main   section.sec3 .sec-con .light-box .box-con .box-gallery{
   width: 100%;
