@@ -225,7 +225,7 @@ header .inner-header nav .popup .login-con .search a{
 }
 
 header .inner-header nav .popup .join-con{
-  flex: 0 0 400px;
+  flex: 0 0 500px;
   height: auto;
   box-sizing: border-box;
   padding: 40px;
@@ -247,23 +247,26 @@ header .inner-header nav .popup .join-con form ul li label{
   flex: 0 0 100px;
   line-height: 40px;
 }
-header .inner-header nav .popup .join-con form ul li input:not(input#userPhone){
-  flex: 0 0 200px;
+header .inner-header nav .popup .join-con form ul li input{
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+header .inner-header nav .popup .join-con form ul li input:not(input#userPhoneBack){
+  flex: 0 0 300px;
   height: 40px;
   background-color: var(--main-background-color);
   outline: 0;
   border: 0;
 }
 header .inner-header nav .popup .join-con form ul li select{
-  flex: 0 0 50px;
+  flex: 0 0 70px;
 }
 header .inner-header nav .popup .join-con form ul li:nth-child(2) input{
-  width: 130px;
+  width: 230px;
   height: 40px;
   background-color: var(--main-background-color);
   outline: 0;
   border: 0;
-  font-size: 12px;
 }
 
 header .inner-header nav .popup .join-con form ul li button{
