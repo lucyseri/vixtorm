@@ -6,7 +6,7 @@
 .title h2{
   margin-right: 10px;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 .title .btn{
@@ -15,7 +15,7 @@
   line-height: 40px;
   text-align: center;
   color: #f00;
-  font-size: 35px;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 .title .btn:hover{
@@ -178,7 +178,7 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
@@ -192,13 +192,13 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.d
   text-align: center;
   line-height: 20px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
   width: 100%;
   height: auto;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
@@ -215,7 +215,7 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .hom
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
   flex: 0 0 40px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
   flex: 0 0 100px;
@@ -239,13 +239,13 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .scoer
   width: 100%;
   text-align: center;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
   width: 100%;
   text-align: center;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 /* section3 */
@@ -511,7 +511,7 @@ main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
   height: auto;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: block;
   position: absolute;
   bottom: -30px;

@@ -27,7 +27,7 @@ footer .top-footer .top-inner .top-nav .top-gnb ul li{
   line-height: 40px;
 }
 footer .top-footer .top-inner .top-nav .top-gnb ul li a{
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 
@@ -58,7 +58,7 @@ footer .bottom-footer .bottom-inner .kepco-con address{
   font-style: normal;
 }
 footer .bottom-footer .bottom-inner .kepco-con address p{
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 footer .bottom-footer .bottom-inner .mark{

@@ -11,7 +11,7 @@ main section.section1{
 }
 main section.section1 h2{
   text-align: center;
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -37,19 +37,13 @@ main section.section1 .sec-con .home-img img{
   height: auto;
   display: block;
 }
-
 main section.section1 .sec-con .home-map{
   width: 824px;
-  /* height: auto; */
+  height: 536px;
   float: left;
   border-radius: 25px;
   overflow: hidden;
-
-  /* background-color: thistle; */
-  height: 536px;
 }
-
-
 /* section.section2 */
 main section.section2{
   width: 1400px;

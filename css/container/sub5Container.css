@@ -36,7 +36,7 @@ main  section .inner-container table colgroup col.col3 {
 }
 
 main  section .inner-container table caption {
-  font-size: 35px;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -55,7 +55,7 @@ main  section .inner-container table tbody tr td {
   border-bottom: 1px solid #ccc;
   padding: 12px 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 
