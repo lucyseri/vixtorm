@@ -1,46 +1,38 @@
+/* sub5_container */
 main {
   width: 100%;
   height: auto;
 }
-
 main section {
   display: flex;
   justify-content: center;
   padding: 60px 0;
 }
-
 main  section .inner-container {
   flex: 0 0 1240px;
 }
-
 main  section .inner-container table,thead,tbody,tr {
   border: none;
 }
-
 main  section .inner-container table {
   width: 100%;
   border: none;
   text-align: center;
 }
-
 main  section .inner-container table colgroup col.col1 {
   width: 80px;
 }
-
 main  section .inner-container table colgroup col.col2 {
   width: 150px;
 }
-
 main  section .inner-container table colgroup col.col3 {
   width: 100px;
 }
-
 main  section .inner-container table caption {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-
 main  section .inner-container table thead tr th {
   border-top: 3px solid #f00;
   border-bottom: 2px solid #ccc;
@@ -48,7 +40,6 @@ main  section .inner-container table thead tr th {
   border-right: none;
   padding: 15px 0;
 }
-
 main  section .inner-container table tbody tr td {
   border-left: none;
   border-right: none;
@@ -58,11 +49,9 @@ main  section .inner-container table tbody tr td {
   font-size: 0.875rem;
   font-weight: 300;
 }
-
 main  section .inner-container table tbody tr:hover {
   background-color: var(--main-background-color);
 }
-
 main  section .inner-container .search-form{
   display: flex;
   justify-content: center;
@@ -99,7 +88,6 @@ main  section .inner-container .search-form form input[type="submit"]{
   cursor: pointer;
   background-color: var(--main-background-color);
 }
-
 main  section .inner-container .paging {
   width: 100%;
   padding: 20px 0 40px;
@@ -107,7 +95,6 @@ main  section .inner-container .paging {
   display: flex;
   justify-content: center;
 }
-
 main  section .inner-container .paging a {
   display: block;
   width: 30px;
@@ -116,7 +103,6 @@ main  section .inner-container .paging a {
   text-align: center;
   line-height: 30px;
 }
-
 main  section .inner-container .paging a:hover {
   background-color: var(--main-background-color);
 }

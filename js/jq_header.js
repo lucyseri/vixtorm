@@ -3,13 +3,11 @@
 const goto= $('.goto');
 const gotoUl= $('.goto>ul');
 const gotoUlLi= $('.goto>ul>li');
-
 const out=$('span.out');
 const loginOut=$('span.login.out');
 const joinOut=$('span.join.out');
 
 gotoUlLi.on('click', function(){
-
   const idx=$(this).index();
   if(idx==0){
     $('.login.popup').addClass('popupSign');
@@ -17,7 +15,6 @@ gotoUlLi.on('click', function(){
     $('.join.popup').addClass('popupSign');
   }
 })
-
 loginOut.on('click', function(){
   $('.login.popup').removeClass('popupSign');
 })

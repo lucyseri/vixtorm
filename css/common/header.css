@@ -3,58 +3,47 @@ header {
   width: 100%;
   height: auto;
 }
-
 header .inner-header {
   display: flex;
   justify-content: center;
 }
-
 header .inner-header nav {
   flex: 0 0 1400px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-
 header .inner-header nav h1.logo {
   flex: 0 0 320px;
   padding: 10px 0;
   box-sizing: border-box;
 }
-
 header .inner-header nav h1.logo a img {
   width: 100%;
   height: auto;
   display: block;
 }
-
-
 header .inner-header nav .gnb {
   flex: 0 0 680px;
 }
-
 header .inner-header nav .gnb ul {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-
 header .inner-header nav .gnb>ul>li {
   position: relative;
   padding: 10px 0;
   box-sizing: border-box;
 }
-
 header .inner-header nav .gnb>ul>li>a {
   line-height: 60px;
   font-size: 1.25rem;
   font-weight: 700;
 }
-
 header .inner-header nav .gnb>ul>li:hover>a {
   letter-spacing: 2px;
 }
-
 header .inner-header nav .gnb ul>li ul.sub::before {
   content: '';
   display: block;
@@ -68,7 +57,6 @@ header .inner-header nav .gnb ul>li ul.sub::before {
   left: 50%;
   transform: translateX(-50%);
 }
-
 header .inner-header nav .gnb ul>li ul.sub {
   width: 250%;
   position: absolute;
@@ -82,52 +70,42 @@ header .inner-header nav .gnb ul>li ul.sub {
   border-top: 3px solid #f00;
   z-index: 30;
 }
-
 header .inner-header nav .gnb ul li:hover ul.sub {
   display: block;
 }
-
 header .inner-header nav .gnb ul>li ul.sub li {
   text-align: center;
   line-height: 40px;
   color: rgb(0, 0, 0);
 }
-
 header .inner-header nav .gnb ul>li ul.sub li a {
   color: inherit;
   background-color: inherit;
   font-size: 1rem;
 }
-
-
 header .inner-header nav .gnb ul>li ul.sub li:hover {
   background-color: rgb(255, 0, 0);
   color: #fff;
 }
-
-
 header .inner-header nav .goto {
   flex: 0 0 320px;
   padding: 10px 0;
 }
-
 header .inner-header nav .goto ul {
   display: flex;
   justify-content: end;
   gap: 20px;
 }
-
 header .inner-header nav .goto ul li {
   line-height: 60px;
   text-align: right;
   position: relative;
   cursor: pointer;
-}
-
-header .inner-header nav .goto ul li a {
   font-size: 0.75rem;
 }
-
+header .inner-header nav .goto ul li a {
+  font-size: inherit;
+}
 header .inner-header nav .goto ul li:not(:last-child)::after {
   content: '';
   display: block;
@@ -139,7 +117,6 @@ header .inner-header nav .goto ul li:not(:last-child)::after {
   top: 50%;
   transform: translateY(-50%);
 }
-
 header .inner-header nav .popup {
   display: flex;
   justify-content: center;
@@ -157,7 +134,6 @@ header .inner-header nav .popup {
   visibility:hidden;
   opacity: 0;
 }
-
 header .inner-header nav .popup span.out{
   display: block;
   width: 50px;
@@ -174,7 +150,6 @@ header .inner-header nav .popup span.out:hover{
   color: #fff;
   background-color: #f00;
 }
-
 header .inner-header nav .popup .login-con{
   flex: 0 0 400px;
   background-color: #fff;
@@ -222,7 +197,6 @@ header .inner-header nav .popup .login-con .search a{
   font-size: 0.75rem;
   text-align: right;
 }
-
 header .inner-header nav .popup .join-con{
   flex: 0 0 500px;
   height: auto;
@@ -267,7 +241,6 @@ header .inner-header nav .popup .join-con form ul li:nth-child(2) input{
   outline: 0;
   border: 0;
 }
-
 header .inner-header nav .popup .join-con form ul li button{
   width: 100%;
   font-size: 1.125rem;
@@ -278,7 +251,6 @@ header .inner-header nav .popup .join-con form ul li button{
   border: 0;
   border-top: 3px solid #f00;
 }
-
 .popupSign{
   height: 100vh !important;
   visibility: visible !important;

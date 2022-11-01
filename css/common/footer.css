@@ -29,8 +29,6 @@ footer .top-footer .top-inner .top-nav .top-gnb ul li{
 footer .top-footer .top-inner .top-nav .top-gnb ul li a{
   font-size: 0.875rem;
 }
-
-
 footer .bottom-footer{
   padding: 20px 0;
   display: flex;
@@ -53,14 +51,12 @@ footer .bottom-footer .bottom-inner .kepco-con h1.kepco-logo img{
   height: auto;
   display: block;
 }
-
 footer .bottom-footer .bottom-inner .kepco-con address{
   font-style: normal;
 }
 footer .bottom-footer .bottom-inner .kepco-con address p{
   font-size: 0.875rem;
 }
-
 footer .bottom-footer .bottom-inner .mark{
   flex: 0 0 176px;
   display: flex;

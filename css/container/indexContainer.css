@@ -110,7 +110,6 @@ main   section.sec1 .sec-con .bcon span.start.btn{
   background-color: #fff;
   margin: 0 20px;
 }
-
 /* section2 */
 main   section.sec2{
   padding: 60px 0;
@@ -263,7 +262,6 @@ main   section.sec3 .sec-con .photo-gallery{
 .sec3Animation{
   animation: sec3Ani 1s ease-in-out;
 }
-
 @keyframes sec3Ani{
   from{
     transform: translateY(200px);
@@ -527,7 +525,6 @@ main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
   background-color: #f4f4f493;
   padding: 8px 0;
 }
-
 /*section5*/
 main   section.sec5{
   width: 100%;
