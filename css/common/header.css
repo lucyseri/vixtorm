@@ -105,6 +105,7 @@ header .inner-header nav .goto ul li {
 }
 header .inner-header nav .goto ul li a {
   font-size: inherit;
+  line-height: inherit;
 }
 header .inner-header nav .goto ul li:not(:last-child)::after {
   content: '';
