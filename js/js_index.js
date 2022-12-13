@@ -61,7 +61,7 @@ function sec1bannerFn(e) {
     })
   }
 }
-(() => {autogallery()})();
+(() => { autogallery() })();
 
 //section2
 const sec2slideCon = document.querySelector('.slide-con');
@@ -93,26 +93,11 @@ const sec2Info = {
   sec2awayimg: ['kc', 'kc', 'kc', 'wc', 'kc', 'ka', 'kc', 'ss', 'kc', 'hd', 'kb', 'kc'],
   sec2awayscore: ['1', '3', '3', '3', '3', '1', '3', '0', '2', '2', '2', '1'],
 }
-const sec2gap = sec2slideConUlLi[4].offsetLeft - sec2slideConUlLi[0].offsetLeft;
-sec2leftArrow.addEventListener('click', sec2slideFn);
-sec2rightArrow.addEventListener('click', sec2slideFn);
-let i2 = 0;
-function sec2slideFn(e) {
-  if (e.type == 'click') {
-    if (e.target == sec2leftArrow) {
-      if (i2 >= 2) i2 = -1;
-      i2++;
-      const sec2goto = (-i2 * sec2gap) + 'px';
-      sec2slideCon.style.left = sec2goto;
-      sec2slideCon.style.transition = 300 + 'ms';
-    } else if (e.target == sec2rightArrow) {
-      if (i2 <= 0) i2 = sec2slideConUlLi.length / 4;
-      i2--;
-      const sec2goto = (-i2 * sec2gap) + 'px';
-      sec2slideCon.style.left = sec2goto;
-      sec2slideCon.style.transition = 300 + 'ms';
-    }
-  }
+function sec2aotoGo(num) {
+  const sec2gap = sec2slideConUlLi[4].offsetLeft - sec2slideConUlLi[0].offsetLeft;
+  const sec2goto = (-num * sec2gap) + 'px';
+  sec2slideCon.style.left = sec2goto;
+  sec2slideCon.style.transition = 300 + 'ms';
 }
 for (let j = 0; j < sec2slideConUlLi.length; j++) {
   round[j].innerText = sec2Info.sec2round[j];
@@ -125,6 +110,20 @@ for (let j = 0; j < sec2slideConUlLi.length; j++) {
   awayScore[j].firstElementChild.innerText = sec2Info.sec2awayteam[j];
   awayScore[j].lastElementChild.innerText = sec2Info.sec2awayscore[j];
 }
+let i2 = 0;
+function sec2slideFn(e) {
+  if (e.target == sec2leftArrow) {
+    if (i2 <= 0) {i2 = 1}
+    i2--;
+    sec2aotoGo(i2);
+  } else if (e.target == sec2rightArrow) {
+    if (i2 >= sec2slideConUlLi.length / 4 - 1) {i2 = sec2slideConUlLi.length / 4 - 2} 
+    i2++;
+    sec2aotoGo(i2);
+  }
+}
+sec2leftArrow.addEventListener('click', sec2slideFn);
+sec2rightArrow.addEventListener('click', sec2slideFn);
 
 //section3
 const photoGallery = document.querySelector('.photo-gallery');
@@ -149,7 +148,7 @@ const arrBg3 = [];
 for (let i = 0; i < galleryImg.length; i++) {
   arrBg3.push(`url(img/sec3_${i}_0.jpg) no-repeat 50%/cover`);
   galleryImg[i].style.background = arrBg3[i];
-  galleryTxt[i].innerText=galleryImgTxt[i] + "대표이미지";
+  galleryTxt[i].innerText = galleryImgTxt[i] + "대표이미지";
 }
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -165,9 +164,9 @@ photoGalleryUl.addEventListener('click', (e) => {
       lightBox.classList.add('lightBoxOn');
       boxGalleryUlLi.forEach((el2, idx2) => {
         el2.style.background = `black url(img/sec3_${idx}_${idx2}.jpg) no-repeat 50%/auto`;
-        el2.innerText=`${galleryImgTxt[idx]}대표이미지${idx2}`;
+        el2.innerText = `${galleryImgTxt[idx]}대표이미지${idx2}`;
       })
-      lightBoxMore.innerText=galleryImgTxt[idx]+"더보기";
+      lightBoxMore.innerText = galleryImgTxt[idx] + "더보기";
     }
   })
 })
@@ -197,41 +196,36 @@ const sec4CardSlideUlLi = sec4CardSlideUl.querySelectorAll('li');
 const playerNameArr = [
   'N.01 서재덕L', 'N.02 이민욱S', 'N.03 박철우R', 'N.05 오재성Li', 'N.06 황동일S',
   'N.07 이시몬L', 'N.08 김강녕Li', 'N.10 김지한L', 'N.14 임성진L', 'N.15 김광국S'];
-const gap4 = sec4CardSlideUlLi[1].offsetLeft - sec4CardSlideUlLi[0].offsetLeft;
+function sec4autoGo(num){
+  const gap4 = sec4CardSlideUlLi[1].offsetLeft - sec4CardSlideUlLi[0].offsetLeft;
+  const goto4 = (-num * gap4) + 'px';
+  sec4CardSlide.style.left = goto4;
+  sec4CardSlide.style.transition = 300 + "ms";
+}
+function sec4autoAni(num){
+  let startNum = num + 2;
+   sec4CardSlideUlLi.forEach((el, idx) => {
+    if (idx == startNum) {
+      el.classList.add('sec4Animation');
+      el.children[1].classList.add('sec4PlayerAni')
+    } else {
+      el.classList.remove('sec4Animation');
+      el.children[1].classList.remove('sec4PlayerAni')
+    }
+  })
+}
 let i4 = 0;
-sec4leftArrow.addEventListener('click', e => {
+sec4leftArrow.addEventListener('click', (e) => {
   if (i4 >= sec4CardSlideUlLi.length - 3) i4 = -3;
   i4++;
-  const goto4 = (-i4 * gap4) + 'px';
-  sec4CardSlide.style.left = goto4;
-  sec4CardSlide.style.transition = 300 + "ms";
-  let startNum = i4 + 2;
-  sec4CardSlideUlLi.forEach((el, idx) => {
-    if (idx == startNum) {
-      el.classList.add('sec4Animation');
-      el.children[1].classList.add('sec4PlayerAni')
-    } else {
-      el.classList.remove('sec4Animation');
-      el.children[1].classList.remove('sec4PlayerAni')
-    }
+   sec4autoGo(i4);
+   sec4autoAni(i4)
   })
-})
-sec4rightArrow.addEventListener('click', e => {
-  if (i4 <= -2) i4 = sec4CardSlideUlLi.length - 2;
-  i4--;
-  const goto4 = (-i4 * gap4) + "px";
-  sec4CardSlide.style.left = goto4;
-  sec4CardSlide.style.transition = 300 + "ms";
-  let startNum = i4 + 2;
-  sec4CardSlideUlLi.forEach((el, idx) => {
-    if (idx == startNum) {
-      el.classList.add('sec4Animation');
-      el.children[1].classList.add('sec4PlayerAni')
-    } else {
-      el.classList.remove('sec4Animation');
-      el.children[1].classList.remove('sec4PlayerAni')
-    }
-  })
+  sec4rightArrow.addEventListener('click', e => {
+    if (i4 <= -2) i4 = sec4CardSlideUlLi.length - 2;
+    i4--;
+    sec4autoGo(i4);
+    sec4autoAni(i4)
 })
 sec4CardSlideUlLi.forEach((el, idx) => {
   el.children[0].setAttribute('alt', `${playerNameArr[idx]}`)
