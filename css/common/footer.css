@@ -43,10 +43,10 @@ footer .bottom-footer .bottom-inner .kepco-con{
   display: flex;
   gap: 40px;
 }
-footer .bottom-footer .bottom-inner .kepco-con h2.kepco-logo{
+footer .bottom-footer .bottom-inner .kepco-con .kepco-logo{
   flex: 0 1 140px;
 }
-footer .bottom-footer .bottom-inner .kepco-con h2.kepco-logo img{
+footer .bottom-footer .bottom-inner .kepco-con .kepco-logo img{
   width: 100%;
   height: auto;
   display: block;
@@ -58,11 +58,12 @@ footer .bottom-footer .bottom-inner .kepco-con address p{
   font-size: 0.875rem;
 }
 footer .bottom-footer .bottom-inner .mark{
-  flex: 0 0 176px;
   display: flex;
+  gap: 10px;
+}
+footer .bottom-footer .bottom-inner .mark a{
+  display: block;
 }
 footer .bottom-footer .bottom-inner .mark img{
-  width: 50%;
-  height: auto;
   display: block;
 }
