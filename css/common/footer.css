@@ -43,10 +43,10 @@ footer .bottom-footer .bottom-inner .kepco-con{
   display: flex;
   gap: 40px;
 }
-footer .bottom-footer .bottom-inner .kepco-con h1.kepco-logo{
+footer .bottom-footer .bottom-inner .kepco-con h2.kepco-logo{
   flex: 0 1 140px;
 }
-footer .bottom-footer .bottom-inner .kepco-con h1.kepco-logo img{
+footer .bottom-footer .bottom-inner .kepco-con h2.kepco-logo img{
   width: 100%;
   height: auto;
   display: block;
