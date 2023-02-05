@@ -42,9 +42,13 @@ function sec1bannerFn(e) {
           })
           if (i <= 0) i = galleryUlLi.length;
         } else if (idx == 1) {
+          el.classList.add('replay');
+          bconBtn[2].classList.remove('replay');
           setIn = setInterval(autogallery, 3000);
         } else if (idx == 2) {
           clearInterval(setIn);
+          el.classList.add('replay');
+          bconBtn[1].classList.remove('replay');
         } else if (idx == 3) {
           if (i >= galleryUlLi.length - 1) i = -1;
           i++;

@@ -37,9 +37,9 @@ header .inner-header nav .gnb>ul>li {
   box-sizing: border-box;
 }
 header .inner-header nav .gnb>ul>li>a {
-  line-height: 60px;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 60px;
 }
 header .inner-header nav .gnb>ul>li:hover>a {
   letter-spacing: 2px;
@@ -79,9 +79,10 @@ header .inner-header nav .gnb ul>li ul.sub li {
   color: rgb(0, 0, 0);
 }
 header .inner-header nav .gnb ul>li ul.sub li a {
-  color: inherit;
-  background-color: inherit;
   font-size: 1rem;
+  font-weight: 500;
+  background-color: inherit;
+  color: inherit;
 }
 header .inner-header nav .gnb ul>li ul.sub li:hover {
   background-color: rgb(255, 0, 0);
@@ -188,6 +189,7 @@ header .inner-header nav .popup .login-con form ul li button{
   outline: 0;
   border: 0;
   border-top: 3px solid #f00;
+  cursor: pointer;
 }
 header .inner-header nav .popup .login-con .search{
   width: 100%;
@@ -251,6 +253,7 @@ header .inner-header nav .popup .join-con form ul li button{
   outline: 0;
   border: 0;
   border-top: 3px solid #f00;
+  cursor: pointer;
 }
 .popupSign{
   height: 100vh !important;

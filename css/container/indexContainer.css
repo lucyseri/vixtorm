@@ -12,11 +12,11 @@
 .title .btn{
   width: 40px;
   height: 40px;
+  font-size: 1.875rem;
+  font-weight: 700;
   line-height: 40px;
   text-align: center;
   color: #f00;
-  font-size: 1.875rem;
-  font-weight: 700;
 }
 .title .btn:hover{
   color: #fff;
@@ -82,33 +82,36 @@ main   section.sec1 .sec-con .bcon span.btn{
   box-sizing: border-box;
   cursor: pointer;
 }
-main   section.sec1 .sec-con .bcon span.left.btn{
+main   section.sec1 .sec-con .bcon span:nth-child(1){
   width: 0;
   height: 0;
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
   border-right: 8px solid rgb(255, 255, 255);
 }
-main   section.sec1 .sec-con .bcon span.right.btn{
+main   section.sec1 .sec-con .bcon span:nth-child(4){
   width: 0;
   height: 0;
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
   border-left: 8px solid rgb(255, 255, 255);
 }
-main   section.sec1 .sec-con .bcon span.stop.btn{
+main   section.sec1 .sec-con .bcon span:nth-child(3){
   width: 15px;
   height: 15px;
   border-left: 4px solid #fff;
   border-right: 4px solid #fff;
-  margin-right: 20px;
+  margin: 0 20px;
 }
-main   section.sec1 .sec-con .bcon span.start.btn{
+main   section.sec1 .sec-con .bcon span:nth-child(2){
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
   margin: 0 20px;
+}
+.replay{
+  display: none !important;
 }
 /* section2 */
 main   section.sec2{
@@ -170,14 +173,15 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul{
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
   flex: 0 0 320px;
   height: inherit;
-  background-color: rgb(255, 255, 255);
   border-top: 5px solid #f00;
   padding: 40px;
   box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
-  text-align: center;
   font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
   line-height: 20px;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
@@ -196,9 +200,9 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.d
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
   width: 100%;
   height: auto;
-  text-align: center;
   font-size: 0.875rem;
   line-height: 20px;
+  text-align: center;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
   width: 100%;
@@ -213,8 +217,9 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .hom
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
   flex: 0 0 40px;
-  text-align: center;
   font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
   flex: 0 0 100px;
@@ -234,18 +239,18 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score
   text-align: center;
   margin: 20px 0;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .scoer p.team-name{
+main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-name{
   width: 100%;
-  text-align: center;
+  font-weight: 700;
   line-height: 40px;
-  font-size: 1.125rem;
+  text-align: center;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
   width: 100%;
-  text-align: center;
-  line-height: 40px;
   font-size: 1.125rem;
   font-weight: 700;
+  line-height: 40px;
+  text-align: center;
 }
 /* section3 */
 main   section.sec3{
@@ -408,6 +413,7 @@ main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
   box-sizing: border-box;
+  cursor: pointer;
 }
 main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.left{
   transform: rotate(225deg);
