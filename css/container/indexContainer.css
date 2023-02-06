@@ -12,15 +12,11 @@
 .title .btn{
   width: 40px;
   height: 40px;
-  font-size: 1.875rem;
-  font-weight: 700;
-  line-height: 40px;
-  text-align: center;
-  color: #f00;
+  background-image: url(../../img/plus.png);
+  background-position: 0px 0px;
 }
 .title .btn:hover{
-  color: #fff;
-  background-color: #f00;
+  background-position: 40px 0px;
   cursor: pointer;
 }
 main{
@@ -74,41 +70,31 @@ main   section.sec1 .sec-con .bcon{
   left: 0;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
   box-sizing: border-box;
 }
-main   section.sec1 .sec-con .bcon span.btn{
-  display: block;
-  box-sizing: border-box;
+main   section.sec1 .sec-con .bcon ul{
+  flex: 0 0 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+main   section.sec1 .sec-con .bcon ul li{
+  flex: 0 0 40px;
+  height: inherit;
+  background-image: url(../../img/play.png);
   cursor: pointer;
 }
-main   section.sec1 .sec-con .bcon span:nth-child(1){
-  width: 0;
-  height: 0;
-  border-bottom: 8px solid transparent;
-  border-top: 8px solid transparent;
-  border-right: 8px solid rgb(255, 255, 255);
+main   section.sec1 .sec-con .bcon ul li:nth-child(1){
+  background-position: 0px 0px;
 }
-main   section.sec1 .sec-con .bcon span:nth-child(4){
-  width: 0;
-  height: 0;
-  border-bottom: 8px solid transparent;
-  border-top: 8px solid transparent;
-  border-left: 8px solid rgb(255, 255, 255);
+main   section.sec1 .sec-con .bcon ul li:nth-child(2){
+  background-position: 80px 0px;
 }
-main   section.sec1 .sec-con .bcon span:nth-child(3){
-  width: 15px;
-  height: 15px;
-  border-left: 4px solid #fff;
-  border-right: 4px solid #fff;
-  margin: 0 20px;
+main   section.sec1 .sec-con .bcon ul li:nth-child(3){
+  background-position: 120px 0px;
 }
-main   section.sec1 .sec-con .bcon span:nth-child(2){
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fff;
-  margin: 0 20px;
+main   section.sec1 .sec-con .bcon ul li:nth-child(4){
+  background-position: 40px 0;
 }
 .replay{
   display: none !important;
@@ -178,11 +164,10 @@ main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li h3.round{
-  font-size: 0.875rem;
+main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li p.round{
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  line-height: 20px;
 }
 main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
   width: 100%;
@@ -318,13 +303,6 @@ main   section.sec3 .sec-con .photo-gallery ul li .gallery-img{
   opacity: 0.8;
   object-fit: cover;
 }
-.ir-pm{
-  display: block;
-  overflow: hidden;
-  font-size: 0;
-  line-height: 0;
-  text-indent: -9999px;
-}
 main   section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
   opacity: 1;
   cursor: pointer;
@@ -348,46 +326,40 @@ main   section.sec3 .sec-con .light-box{
   opacity: 1 !important;
   z-index: 90;
 }
-main   section.sec3 .sec-con .light-box .box-con{
+main   section.sec3 .sec-con .light-box .inner-box{
   flex: 0 0 800px;
+  height: auto;
+}
+main   section.sec3 .sec-con .light-box .inner-box .out-btn{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 40px auto;
+  background-image: url(../../img/out.jpg);
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+main   section.sec3 .sec-con .light-box .inner-box .out-btn:hover{
+  background-position: 40px 0px;
+}
+main   section.sec3 .sec-con .light-box .inner-box .box-con{
+  width: 100%;
   height: 700px;
   position: relative;
   top: 0;
   left: 0;
 }
-main   section.sec3 .sec-con .light-box .box-con span.box-out{
-  display: block;
-  width: 50px;
-  line-height: 50px;
-  box-sizing: border-box;
-  color: #fff;
-  margin: 0 auto;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-}
-main   section.sec3 .sec-con .light-box .box-con span.box-out:hover{
-  color: #fff;
-  background-color: #f00;
-  cursor: pointer;
-}
-main   section.sec3 .sec-con .light-box .box-con .box-gallery{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery{
   width: 100%;
   height: inherit;
   position: absolute;
   left: 0;
   top: 0;
 }
-main   section.sec3 .sec-con .light-box .box-con .box-gallery ul{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery ul{
   width: 100%;
   height: inherit;
 }
-main   section.sec3 .sec-con .light-box .box-con .box-gallery ul li{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery ul li{
   width: 100%;
   height: inherit;
   position: absolute;
@@ -395,7 +367,7 @@ main   section.sec3 .sec-con .light-box .box-con .box-gallery ul li{
   left: 0;
   background-color: #000;
 }
-main   section.sec3 .sec-con .light-box .box-con .center-btn{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn{
   width: 100%;
   height: auto;
   position: absolute;
@@ -407,7 +379,7 @@ main   section.sec3 .sec-con .light-box .box-con .center-btn{
   display: flex;
   justify-content: space-between;
 }
-main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow{
   width: 30px;
   height: 30px;
   border-right: 3px solid #fff;
@@ -415,13 +387,13 @@ main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow{
   box-sizing: border-box;
   cursor: pointer;
 }
-main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.left{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow.left{
   transform: rotate(225deg);
 }
-main   section.sec3 .sec-con .light-box .box-con .center-btn span.sec3arrow.right{
+main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow.right{
   transform: rotate(45deg);
 }
-main   section.sec3 .sec-con .light-box .box-con a{
+main   section.sec3 .sec-con .light-box .inner-box .box-con a{
   width: 100%;
   height: auto;
   text-align: center;

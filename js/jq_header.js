@@ -3,9 +3,8 @@
 const goto= $('.goto');
 const gotoUl= $('.goto>ul');
 const gotoUlLi= $('.goto>ul>li');
-const out=$('span.out');
-const loginOut=$('span.login.out');
-const joinOut=$('span.join.out');
+const loginOut=$('.out-btn.login-out');
+const joinOut=$('.out-btn.join-out');
 
 gotoUlLi.on('click', function(){
   const idx=$(this).index();

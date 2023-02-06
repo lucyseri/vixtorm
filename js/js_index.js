@@ -1,11 +1,12 @@
 'use strict';
 
 //section1
-const gallery = document.querySelector('.gallery');
+const sec1 = document.querySelector('section.sec1');
+const gallery = sec1.querySelector('.gallery');
 const galleryUl = gallery.querySelector('ul');
 const galleryUlLi = galleryUl.querySelectorAll('li');
-const bcon = document.querySelector('.bcon');
-const bconBtn = bcon.querySelectorAll('span.btn');
+const bcon = sec1.querySelector('.bcon');
+const bconBtn = bcon.querySelectorAll('.bcon>ul>li');
 const arrBg = [];
 for (let i = 0; i < galleryUlLi.length; i++) {
   arrBg.push(`url(img/g${i}.jpg) no-repeat 50%/cover`);
@@ -44,11 +45,11 @@ function sec1bannerFn(e) {
         } else if (idx == 1) {
           el.classList.add('replay');
           bconBtn[2].classList.remove('replay');
-          setIn = setInterval(autogallery, 3000);
-        } else if (idx == 2) {
           clearInterval(setIn);
+        } else if (idx == 2) {
           el.classList.add('replay');
           bconBtn[1].classList.remove('replay');
+          setIn = setInterval(autogallery, 3000);
         } else if (idx == 3) {
           if (i >= galleryUlLi.length - 1) i = -1;
           i++;
@@ -68,17 +69,18 @@ function sec1bannerFn(e) {
 (() => { autogallery() })();
 
 //section2
-const sec2slideCon = document.querySelector('.slide-con');
+const sec2 = document.querySelector('section.sec2');
+const sec2slideCon = sec2.querySelector('.slide-con');
 const sec2slideConUl = sec2slideCon.querySelector('ul');
 const sec2slideConUlLi = sec2slideConUl.querySelectorAll('li');
-const sec2leftArrow = document.querySelector('span.arrow.left');
-const sec2rightArrow = document.querySelector('span.arrow.right');
-const round = document.querySelectorAll('h3.round');
-const gameday = document.querySelectorAll('.gameday');
-const homeEmblem = document.querySelectorAll('.home-emblem');
-const awayEmblem = document.querySelectorAll('.away-emblem');
-const homeScore = document.querySelectorAll('.home.score');
-const awayScore = document.querySelectorAll('.away.score');
+const sec2leftArrow = sec2.querySelector('span.arrow.left');
+const sec2rightArrow = sec2.querySelector('span.arrow.right');
+const round = sec2.querySelectorAll('p.round');
+const gameday = sec2.querySelectorAll('.gameday');
+const homeEmblem = sec2.querySelectorAll('.home-emblem');
+const awayEmblem = sec2.querySelectorAll('.away-emblem');
+const homeScore = sec2.querySelectorAll('.home.score');
+const awayScore = sec2.querySelectorAll('.away.score');
 const sec2Info = {
   sec2round: ['준결승', '준준결승', '6ROUND', '6ROUND', '6ROUND', '6ROUND',
     '6ROUND', '6ROUND', '5ROUND', '5ROUND', '5ROUND', '5ROUND'],
@@ -130,19 +132,20 @@ sec2leftArrow.addEventListener('click', sec2slideFn);
 sec2rightArrow.addEventListener('click', sec2slideFn);
 
 //section3
-const photoGallery = document.querySelector('.photo-gallery');
+const sec3 = document.querySelector('section.sec3');
+const photoGallery = sec3.querySelector('.photo-gallery');
 const photoGalleryUl = photoGallery.querySelector('ul');
 const photoGalleryUlLi = photoGalleryUl.querySelectorAll('li');
-const galleryImg = document.querySelectorAll('.gallery-img');
-const galleryTxt = document.querySelectorAll('span.gallery-text');
-const boxCon = document.querySelector('.box-con');
-const lightBox = document.querySelector('.light-box');
+const galleryImg = sec3.querySelectorAll('.gallery-img');
+const galleryTxt = sec3.querySelectorAll('span.gallery-text');
+const boxCon = sec3.querySelector('.box-con');
+const lightBox = sec3.querySelector('.light-box');
 const lightBoxMore = lightBox.querySelector('a');
-const boxGallery = document.querySelector('.box-gallery');
+const boxGallery = sec3.querySelector('.box-gallery');
 const boxGalleryUl = boxGallery.querySelector('ul');
 const boxGalleryUlLi = boxGalleryUl.querySelectorAll('li');
-const boxGalleryTxt = document.querySelectorAll('span.lightbox-txt');
-const boxOut = document.querySelector('span.box-out');
+const boxGalleryTxt = sec3.querySelectorAll('span.lightbox-txt');
+const boxOut = sec3.querySelector('.out-btn');
 const centerBtn = boxCon.querySelector('.center-btn');
 const sec3Arrow = centerBtn.querySelectorAll('span.sec3arrow');
 const galleryImgTxt = [
@@ -152,11 +155,11 @@ const arrBg3 = [];
 for (let i = 0; i < galleryImg.length; i++) {
   arrBg3.push(`url(img/sec3_${i}_0.jpg) no-repeat 50%/cover`);
   galleryImg[i].style.background = arrBg3[i];
-  galleryTxt[i].innerText = galleryImgTxt[i] + "대표이미지";
+  galleryTxt[i].innerText = galleryImgTxt[i] + " 경기 대표이미지";
 }
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  if (value > 650) {
+  if (value > 720) {
     photoGallery.classList.add('sec3Animation');
   } else {
     photoGallery.classList.remove('sec3Animation');
@@ -170,7 +173,7 @@ photoGalleryUl.addEventListener('click', (e) => {
         el2.style.background = `black url(img/sec3_${idx}_${idx2}.jpg) no-repeat 50%/auto`;
         el2.innerText = `${galleryImgTxt[idx]}대표이미지${idx2}`;
       })
-      lightBoxMore.innerText = galleryImgTxt[idx] + "더보기";
+      lightBoxMore.innerText = galleryImgTxt[idx] + " 더보기";
     }
   })
 })
@@ -192,9 +195,10 @@ centerBtn.addEventListener('click', (e) => {
 })
 
 //section4
-const sec4leftArrow = document.querySelector('span.left.sec4Arrow');
-const sec4rightArrow = document.querySelector('span.right.sec4Arrow');
-const sec4CardSlide = document.querySelector('.card-con');
+const sec4 = document.querySelector('section.sec4');
+const sec4leftArrow = sec4.querySelector('span.left.sec4Arrow');
+const sec4rightArrow = sec4.querySelector('span.right.sec4Arrow');
+const sec4CardSlide = sec4.querySelector('.card-con');
 const sec4CardSlideUl = sec4CardSlide.querySelector('ul');
 const sec4CardSlideUlLi = sec4CardSlideUl.querySelectorAll('li');
 const playerNameArr = [

@@ -17,7 +17,9 @@ html,body {
 }
 body {
 	font-family: 'IBM Plex Sans KR', sans-serif;
-	font-weight: 100;
+	font-weight: 400;
+}
+#wrap{
 	background-color: #ffffff;
 }
 a {
@@ -30,4 +32,11 @@ ul,li {
 table,th,td {
 	border: 1px solid;
 	border-collapse: collapse;
+}
+.ir-pm{
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
 }

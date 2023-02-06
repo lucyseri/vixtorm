@@ -47,7 +47,7 @@ main  section .inner-container table tbody tr td {
   padding: 12px 0;
   box-sizing: border-box;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 main  section .inner-container table tbody tr:hover {
   background-color: var(--main-background-color);
