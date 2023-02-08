@@ -4,12 +4,6 @@ footer{
   height: auto;
   background-color: var(--main-background-color);
 }
-footer::before{
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-}
 footer .top-footer{
   display: flex;
   justify-content: center;
@@ -18,7 +12,6 @@ footer .top-footer{
 footer .top-footer .top-inner{
   flex: 0 1 1400px;
 }
-
 footer .top-footer .top-inner .top-nav .top-gnb ul{
   display: flex;
   justify-content: space-between;

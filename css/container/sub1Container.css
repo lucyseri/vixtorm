@@ -10,15 +10,15 @@ main section.section1{
   height: auto;
   margin: 0 auto;
 }
-main section.section1 h2{
+main section.section1 .sec-con{
+  width: 100%;
+  height: auto;
+}
+main section.section1 .sec-con h2{
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
-}
-main section.section1 .sec-con{
-  width: 100%;
-  height: auto;
 }
 main section.section1 .sec-con::after{
   content: '';
@@ -43,6 +43,8 @@ main section.section1 .sec-con .home-map{
   height: 536px;
   float: left;
   border-radius: 25px;
+  border: 1px solid;
+  box-sizing: border-box;
   overflow: hidden;
 }
 /* section.section2 */
@@ -51,40 +53,58 @@ main section.section2{
   height: auto;
   margin: 0 auto;
 }
-main section.section2 h2{
-  display: none;
-}
 main section.section2 .sec-con{
   width: 100%;
   height: auto;
   padding: 40px 0;
 }
+main section.section2 .sec-con h2{
+  display: none;
+}
 main section.section2 .sec-con ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 40px;
   padding: 0 10px;
   box-sizing: border-box;
 }
 main section.section2 .sec-con ul li{
-  width: 536px;
-  margin: 0 40px 20px 0;
-  display: inline-block;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
   position: relative;
 }
-main section.section2 .sec-con ul li span{
-  line-height: 30px;
+main section.section2 .sec-con ul li.narrow{
+  flex: 0 0 536px;
 }
-main section.section2 .sec-con ul li span.title::before{
+main section.section2 .sec-con ul li.wide{
+  flex: 0 0 800px;
+}
+main section.section2 .sec-con ul li::before{
   content: '';
   display: block;
   width: 3px;
-  height: 20px;
+  height: 15px;
   background-color: #f00;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+} 
+main section.section2 .sec-con ul li p{
+  line-height: 40px;
 }
-main section.section2 .sec-con ul li span.title{
+main section.section2 .sec-con ul li p.title{
+  flex: 0 0 100px;
   font-weight: 700;
   padding: 0 10px;
   box-sizing: border-box;
+}
+main section.section2 .sec-con ul li.wide p.con{
+  flex: 0 1 700px;
+}
+main section.section2 .sec-con ul li.narrow p.con{
+  flex: 0 1 416px;
 }
