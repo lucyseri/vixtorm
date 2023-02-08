@@ -43,8 +43,6 @@ main section.section1 .sec-con .home-map{
   height: 536px;
   float: left;
   border-radius: 25px;
-  border: 1px solid;
-  box-sizing: border-box;
   overflow: hidden;
 }
 /* section.section2 */
