@@ -11,12 +11,11 @@ header .inner-header nav {
   flex: 0 0 1400px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
 header .inner-header nav h1.logo {
-  flex: 0 0 320px;
   padding: 10px 0;
   box-sizing: border-box;
+  flex: 0 0 200px;
 }
 header .inner-header nav h1.logo a img {
   width: 100%;
@@ -89,8 +88,9 @@ header .inner-header nav .gnb ul>li ul.sub li:hover {
   color: #fff;
 }
 header .inner-header nav .goto {
-  flex: 0 0 320px;
+  flex: 0 0 200px;
   padding: 10px 0;
+  box-sizing: border-box;
 }
 header .inner-header nav .goto ul {
   display: flex;
@@ -98,11 +98,11 @@ header .inner-header nav .goto ul {
   gap: 20px;
 }
 header .inner-header nav .goto ul li {
-  line-height: 60px;
   text-align: right;
   position: relative;
   cursor: pointer;
   font-size: 0.75rem;
+  line-height: 60px;
 }
 header .inner-header nav .goto ul li a {
   font-size: inherit;
