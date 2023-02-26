@@ -8,6 +8,15 @@ const galleryUlLi = galleryUl.querySelectorAll('li');
 const bcon = sec1.querySelector('.bcon');
 const bconBtn = bcon.querySelectorAll('.bcon>ul>li');
 const arrBg = [];
+function galleryFn(num){
+  galleryUlLi.forEach((el, idx) => {
+    if (num === idx) {
+      el.classList.add('visible');
+    } else {
+      el.classList.remove('visible');
+    }
+  })
+}
 for (let i = 0; i < galleryUlLi.length; i++) {
   arrBg.push(`url(img/g${i}.jpg) no-repeat 50%/cover`);
   galleryUlLi[i].style.background = arrBg[i];
@@ -16,55 +25,39 @@ let i = -1;
 function autogallery() {
   if (i >= galleryUlLi.length - 1) i = -1;
   i++;
-  galleryUlLi.forEach((el, idx) => {
-    if (i === idx) {
-      el.classList.add('visible');
-    } else {
-      el.classList.remove('visible');
-    }
-  })
+  galleryFn(i);
   if (i >= galleryUlLi.length - 1) i = -1;
 }
-let setIn = setInterval(autogallery, 3000);
+let setIn = setInterval(autogallery, 5000);
 bcon.addEventListener('click', sec1bannerFn);
+bcon.addEventListener('mouseover', sec1bannerFn);
+bcon.addEventListener('mouseout', sec1bannerFn);
 function sec1bannerFn(e) {
-  if (e.type == 'click') {
-    bconBtn.forEach((el, idx) => {
-      if (e.target == el) {
+  bconBtn.forEach((el, idx)=>{
+    if(e.target == el){
+      if(e.type == 'click'){
         if (idx == 0) {
           if (i <= 0) i = galleryUlLi.length;
           i--;
-          galleryUlLi.forEach((el, idx) => {
-            if (i === idx) {
-              el.classList.add('visible');
-            } else {
-              el.classList.remove('visible');
-            }
-          })
-          if (i <= 0) i = galleryUlLi.length;
-        } else if (idx == 1) {
-          el.classList.add('replay');
-          bconBtn[2].classList.remove('replay');
-          clearInterval(setIn);
-        } else if (idx == 2) {
-          el.classList.add('replay');
-          bconBtn[1].classList.remove('replay');
-          setIn = setInterval(autogallery, 3000);
-        } else if (idx == 3) {
+          galleryFn(i);
+         if (i <= 0) i = galleryUlLi.length;
+        }else if (idx == 3) {
           if (i >= galleryUlLi.length - 1) i = -1;
           i++;
-          galleryUlLi.forEach((el, idx) => {
-            if (i === idx) {
-              el.classList.add('visible');
-            } else {
-              el.classList.remove('visible');
-            }
-          })
+          galleryFn(i);
           if (i >= galleryUlLi.length - 1) i = -1;
         }
+      }else if(e.type == 'mouseover'){
+        clearInterval(setIn);
+        bconBtn[1].classList.add('replay');
+        bconBtn[2].classList.remove('replay');
+      }else if(e.type == 'mouseout'){
+        setIn = setInterval(autogallery, 5000);
+        bconBtn[1].classList.remove('replay');
+        bconBtn[2].classList.add('replay');
       }
-    })
-  }
+    }
+  })
 }
 (() => { autogallery() })();
 

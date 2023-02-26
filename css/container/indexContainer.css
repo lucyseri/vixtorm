@@ -82,9 +82,9 @@ main   section.sec1 .sec-con .bcon ul li{
   flex: 0 0 40px;
   height: inherit;
   background-image: url(../../img/play.png);
-  cursor: pointer;
 }
 main   section.sec1 .sec-con .bcon ul li:nth-child(1){
+  cursor: pointer;
   background-position: 0px 0px;
 }
 main   section.sec1 .sec-con .bcon ul li:nth-child(2){
@@ -95,6 +95,7 @@ main   section.sec1 .sec-con .bcon ul li:nth-child(3){
 }
 main   section.sec1 .sec-con .bcon ul li:nth-child(4){
   background-position: 40px 0;
+  cursor: pointer;
 }
 .replay{
   display: none !important;
