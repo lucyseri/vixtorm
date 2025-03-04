@@ -1,7 +1,7 @@
-@import url(../common/reset.css);
-@import url(../common/header.css);
-@import url(../common/footer.css);
-@import url(../container/sub5Container.css);
+@import url("../common/reset.css");
+@import url("../common/header.css");
+@import url("../common/footer.css");
+@import url("../container/sub5Container.css");
 
 header{
   border-bottom: 1px solid #ccc;

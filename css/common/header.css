@@ -119,6 +119,7 @@ header .inner-header nav .goto ul li:not(:last-child)::after {
   top: 50%;
   transform: translateY(-50%);
 }
+/*login & join common */
 header .inner-header nav .popup {
   display: flex;
   justify-content: center;
@@ -140,13 +141,14 @@ header .inner-header nav .popup .out-btn{
   width: 40px;
   height: 40px;
   margin: 0 auto;
-  background-image: url(../../img/out.jpg);
+  background-image: url("../../img/out.jpg");
   background-position: 0px 0px;
   cursor: pointer;
 }
 header .inner-header nav .popup .out-btn:hover{
   background-position: 40px 0px;
 }
+/*login popup*/
 header .inner-header nav .popup .login-con{
   flex: 0 0 400px;
   background-color: #fff;
@@ -174,6 +176,7 @@ header .inner-header nav .popup .login-con form ul li input{
   background-color: var(--main-background-color);
   outline: 0;
   border: 0;
+  padding-left: 12px;
 }
 header .inner-header nav .popup .login-con form ul li button{
   width: 100%;
@@ -195,6 +198,7 @@ header .inner-header nav .popup .login-con .search a{
   font-size: 0.75rem;
   text-align: right;
 }
+/*join popup*/
 header .inner-header nav .popup .join-con{
   flex: 0 0 500px;
   height: auto;

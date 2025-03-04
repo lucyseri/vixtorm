@@ -1,4 +1,17 @@
-/* container */
+/* layout */
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--main-background-color);
+}
+main section:not(.sec1){
+  display: flex;
+  justify-content: center;
+}
+main section .sec-inner{
+  flex: 0 0 1400px;
+}
+/* common*/
 .title{
   display: flex;
   justify-content: center;
@@ -12,43 +25,45 @@
 .title .btn{
   width: 40px;
   height: 40px;
-  background-image: url(../../img/plus.png);
+  background-image: url("../../img/plus.png");
   background-position: 0px 0px;
 }
 .title .btn:hover{
   background-position: 40px 0px;
   cursor: pointer;
 }
-main{
+.carousel{}
+.carousel .arrow-btn{}
+.carousel .arrow-btn.left{}
+.carousel .arrow-btn.right{}
+.carousel .carousel-frame{}
+.carousel .carousel-frame ul.carousel-con{}
+.carousel .carousel-frame ul.carousel-con li{}
+/* section1 - main banner */
+.sec1{
   width: 100%;
   height: auto;
-  background-color: var(--main-background-color);
 }
-/* section1 */
-main   section.sec1{
-  width: 100%;
-  height: auto;
-}
-main   section.sec1 .sec-con{
+.sec1 .main-banner{
   width: 100%;
   height: 800px;
   position: relative;
 }
-main   section.sec1 .sec-con h2{
+.sec1 .main-banner h2{
   display: none;
 }
-main   section.sec1 .sec-con .gallery{
+.sec1 .main-banner .banner-img{
   width: 100%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
 }
-main   section.sec1 .sec-con .gallery ul{
+.sec1 .main-banner .banner-img ul{
   width: 100%;
   height: inherit;
 }
-main   section.sec1 .sec-con .gallery ul li{
+.sec1 .main-banner .banner-img ul li{
   width: 100%;
   height: inherit;
   position: absolute;
@@ -62,7 +77,7 @@ main   section.sec1 .sec-con .gallery ul li{
   visibility: visible !important;
   opacity: 1 !important;
 }
-main   section.sec1 .sec-con .bcon{
+.sec1 .main-banner .bcon{
   width: 100%;
   height: auto;
   position: absolute;
@@ -72,182 +87,144 @@ main   section.sec1 .sec-con .bcon{
   justify-content: center;
   box-sizing: border-box;
 }
-main   section.sec1 .sec-con .bcon ul{
+.sec1 .main-banner .bcon ul{
   flex: 0 0 120px;
   height: 40px;
   display: flex;
   justify-content: space-between;
 }
-main   section.sec1 .sec-con .bcon ul li{
+.sec1 .main-banner .bcon ul li{
   flex: 0 0 40px;
   height: inherit;
-  background-image: url(../../img/play.png);
+  background-image: url("../../img/play.png");
 }
-main   section.sec1 .sec-con .bcon ul li:nth-child(1){
+.sec1 .main-banner .bcon ul li:nth-child(1){
   cursor: pointer;
   background-position: 0px 0px;
 }
-main   section.sec1 .sec-con .bcon ul li:nth-child(2){
+.sec1 .main-banner .bcon ul li:nth-child(2){
   background-position: 80px 0px;
 }
-main   section.sec1 .sec-con .bcon ul li:nth-child(3){
+.sec1 .main-banner .bcon ul li:nth-child(3){
   background-position: 120px 0px;
 }
-main   section.sec1 .sec-con .bcon ul li:nth-child(4){
+.sec1 .main-banner .bcon ul li:nth-child(4){
   background-position: 40px 0;
   cursor: pointer;
 }
 .replay{
   display: none !important;
 }
-/* section2 */
-main   section.sec2{
+/*section 2  - game schedule*/
+.sec2{
   padding: 60px 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
-main   section.sec2 .sec-con{
-  flex: 0 0 1500px;
-  height: auto;
-}
-main   section.sec2 .sec-con .sec2-con{
+.sec2 .sec-inner .carousel{
   margin: 40px 0;
+  width: 100%;
   height: 440px;
-  display: flex;
-  justify-content: space-between;
-}
-main   section.sec2 .sec-con .sec2-con .arrow-btn{
-  flex: 0 0 30px;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main   section.sec2 .sec-con .sec2-con .arrow-btn span.arrow{
-  width: 30px;
-  height: 30px;
-  border-top: 3px solid;
-  border-right: 3px solid;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-main   section.sec2 .sec-con .sec2-con .left.arrow-btn span.arrow.left{
-  transform: rotate(225deg);
-}
-main   section.sec2 .sec-con .sec2-con .right.arrow-btn span.arrow.right{
-  transform: rotate(45deg);
-}
-main   section.sec2 .sec-con .sec2-con .game-slide{
-  flex: 0 0 1400px;
-  height: inherit;
-  overflow: hidden;
   position: relative;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con{
-  width: 305.7142%;
+.sec2 .sec-inner .carousel .arrow-btn{
+  width: 48px;
+  height: 48px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  background: url("../../img/arrow.svg") no-repeat center / auto;
+  cursor: pointer;
+}
+.sec2 .sec-inner .carousel .arrow-btn.left{
+  left: -60px;
+  transform: translateY(-50%);
+}
+.sec2 .sec-inner .carousel .arrow-btn.right{
+  right: -60px;
+  transform: translateY(-50%) scaleX(-1);
+}
+.sec2 .sec-inner .carousel .carousel-frame{
+  width: 100%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul{
-  height: inherit;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con{
+  width: calc(320px * 12 + 40px * 11);
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li{
-  flex: 0 0 320px;
-  height: inherit;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li{
+  flex:  0 0 320px;
   border-top: 5px solid #f00;
   padding: 40px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li p.round{
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li p.round{
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday{
-  width: 100%;
-  height: auto;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday{
   margin: 40px 0;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.date{
-  width: 100%;
-  height: auto;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday .date{
   text-align: center;
   line-height: 20px;
   font-weight: 700;
   font-size: 1.125rem;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .gameday p.place{
-  width: 100%;
-  height: auto;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday .place{
   font-size: 0.875rem;
   line-height: 20px;
   text-align: center;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem{
-  width: 100%;
-  height: 100px;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .home-emblem{
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem>div{
   flex: 0 0 100px;
-  height: inherit;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .verse{
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem .verse{
   flex: 0 0 40px;
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem .away-emblem{
-  flex: 0 0 100px;
-  height: inherit;
-}
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .emblem img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team{
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team{
   display: flex;
   justify-content: space-between;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score{
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team .score{
   flex: 0 0 100px;
   text-align: center;
   margin: 20px 0;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-name{
-  width: 100%;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team .score .team-name{
   font-weight: 700;
   line-height: 40px;
   text-align: center;
 }
-main   section.sec2 .sec-con .sec2-con .game-slide .slide-con ul li .team .score p.team-score{
-  width: 100%;
+.sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team .score .team-score{
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 40px;
   text-align: center;
 }
-/* section3 */
-main   section.sec3{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-main   section.sec3 .sec-con{
-  flex: 0 0 1400px;
-}
-main   section.sec3 .sec-con .photo-gallery{
+/* section3 - game gallery */
+.sec3 .sec-inner .photo-gallery{
   margin: 40px 0;
 }
 .sec3Animation{
@@ -263,52 +240,51 @@ main   section.sec3 .sec-con .photo-gallery{
     opacity: 1;
   }
 }
-main   section.sec3 .sec-con .photo-gallery ul{
+.sec3 .sec-inner .photo-gallery ul{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, minmax(200px, auto));
   grid-auto-rows: minmax(200px, auto);
   gap: 5px;
 }
-main   section.sec3 .sec-con .photo-gallery ul li{
+.sec3 .sec-inner .photo-gallery ul li{
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(1){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(1){
   grid-area: 1/1/4/3;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(2){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(2){
   grid-area: 1/3/2/5;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(3){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(3){
   grid-area: 1/5/2/6;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(4){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(4){
   grid-area: 1/6/3/7;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(5){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(5){
   grid-area: 2/3/3/4;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(6){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(6){
   grid-area: 2/4/4/6;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(7){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(7){
   grid-area: 3/3/4/4;
 }
-main   section.sec3 .sec-con .photo-gallery ul li:nth-child(8){
+.sec3 .sec-inner .photo-gallery ul li:nth-child(8){
   grid-area: 3/6/4/7;
 }
-main   section.sec3 .sec-con .photo-gallery ul li .gallery-img{
+.sec3 .sec-inner .photo-gallery ul li .gallery-img{
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  object-fit: cover;
 }
-main   section.sec3 .sec-con .photo-gallery ul li .gallery-img:hover{
+.sec3 .sec-inner .photo-gallery ul li .gallery-img:hover{
   opacity: 1;
   cursor: pointer;
 }
-main   section.sec3 .sec-con .light-box{
+.sec3 .sec-inner .light-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,48 +303,45 @@ main   section.sec3 .sec-con .light-box{
   opacity: 1 !important;
   z-index: 90;
 }
-main   section.sec3 .sec-con .light-box .inner-box{
+.sec3 .sec-inner .light-box .box-inner{
   flex: 0 0 800px;
   height: auto;
 }
-main   section.sec3 .sec-con .light-box .inner-box .out-btn{
+.sec3 .sec-inner .light-box .box-inner .out-btn{
   width: 40px;
   height: 40px;
-  margin: 0 auto 40px auto;
-  background-image: url(../../img/out.jpg);
+  margin: 0 auto 40px;
+  background-image: url("../../img/out.jpg");
   background-position: 0px 0px;
+  background-size: auto;
   cursor: pointer;
 }
-main   section.sec3 .sec-con .light-box .inner-box .out-btn:hover{
+.sec3 .sec-inner .light-box .box-inner .out-btn:hover{
   background-position: 40px 0px;
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con{
+.sec3 .sec-inner .light-box .box-inner .box-con{
   width: 100%;
   height: 700px;
   position: relative;
   top: 0;
   left: 0;
-}
-main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery{
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery ul{
-  width: 100%;
-  height: inherit;
-}
-main   section.sec3 .sec-con .light-box .inner-box .box-con .box-gallery ul li{
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #000;
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn{
+.sec3 .sec-inner .light-box .box-inner .box-con ul{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sec3 .sec-inner .light-box .box-inner .box-con ul li{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sec3 .sec-inner .light-box .box-inner .box-con .arrow-btn{
   width: 100%;
   height: auto;
   position: absolute;
@@ -380,7 +353,7 @@ main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn{
   display: flex;
   justify-content: space-between;
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow{
+.sec3 .sec-inner .light-box .box-inner .box-con .arrow-btn span.sec3arrow{
   width: 30px;
   height: 30px;
   border-right: 3px solid #fff;
@@ -388,13 +361,13 @@ main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec
   box-sizing: border-box;
   cursor: pointer;
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow.left{
+.sec3 .sec-inner .light-box .box-inner .box-con .arrow-btn span.sec3arrow.left{
   transform: rotate(225deg);
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con .center-btn span.sec3arrow.right{
+.sec3 .sec-inner .light-box .box-inner .box-con .arrow-btn span.sec3arrow.right{
   transform: rotate(45deg);
 }
-main   section.sec3 .sec-con .light-box .inner-box .box-con a{
+.sec3 .sec-inner .light-box .box-inner .box-con a{
   width: 100%;
   height: auto;
   text-align: center;
@@ -406,76 +379,67 @@ main   section.sec3 .sec-con .light-box .inner-box .box-con a{
   line-height: 40px;
   padding: 20px 0;
 }
-/* section4 */
-main   section.sec4{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+/* section4 - player info */
+.sec4{
   padding: 40px 0;
 }
-main   section.sec4 .sec-con{
-  flex: 0 0 1500px;
-  height: auto;
-}
-main   section.sec4 .sec-con .card-slide{
+.sec4 .sec-inner .carousel{
   width: 100%;
   height: 404px;
+  position: relative;
   margin: 40px 0;
-  display: flex;
-  justify-content: space-between;  
 }
-main   section.sec4 .sec-con .card-slide .slide-arrow{
-  flex: 0 0 30px;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--main-background-color);
+.sec4 .sec-inner .carousel .arrow-btn{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  background: url("../../img/arrow.svg") no-repeat center / auto;
   cursor: pointer;
 }
-main   section.sec4 .sec-con .card-slide .slide-arrow span.sec4Arrow{
-  width: 30px;
-  height: 30px;
-  border-top: 3px solid;
-  border-right: 3px solid;
-  box-sizing: border-box;
+.sec4 .sec-inner .carousel .arrow-btn.left{
+  left: -60px;
+  transform: translateY(-50%);
 }
-main   section.sec4 .sec-con .card-slide .slide-arrow span.left.sec4Arrow{
-  transform: rotate(225deg);
+.sec4 .sec-inner .carousel .arrow-btn.right{
+  right: -60px;
+  transform: translateY(-50%) scaleX(-1);
 }
-main   section.sec4 .sec-con .card-slide .slide-arrow span.right.sec4Arrow{
-  transform: rotate(45deg);
-}
-main   section.sec4 .sec-con .card-slide .sec4-slide{
-  flex: 0 0 1400px;
-  height: inherit;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-main   section.sec4 .sec-con .card-slide .sec4-slide .card-con{
-  width: 200%;
+.sec4 .sec-inner .carousel .carousel-frame{
+  width: 100%;
   height: inherit;
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
-main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul{
-  width: 100%;
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con{
+  width: 2820px;
   height: inherit;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li{
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li{
   flex: 0 0 264px;
   height: inherit;
   transform: scale(0.8);
   opacity: 0.6;
+}
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li.sec4Animation{
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li a{
+  display: block;
+  width: 100%;
+  height: inherit;
   position: relative;
 }
-main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li img{
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li a img{
   display: block;
   width: 100%;
   height: auto;
@@ -483,48 +447,38 @@ main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li img{
   top: 0;
   left: 0;
 }
-main   section.sec4 .sec-con .card-slide .sec4-slide .card-con ul li a{
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li a span.player-name{
+  display: block;
   width: 100%;
   height: auto;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.125rem;
-  display: block;
   position: absolute;
   bottom: -30px;
   left: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
 }
-.sec4Animation{
-  transform: scale(1) !important;
-  opacity: 1 !important;
-}
-.sec4PlayerAni{
+.sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li.sec4Animation a span.player-name{
   bottom: 0 !important;
   font-style: italic;
   background-color: #f4f4f493;
   padding: 8px 0;
 }
-/*section5*/
-main   section.sec5{
+/* section5 - sns */
+.sec5{
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
   padding: 60px 0;
   background-color: #fff;
 }
-main   section.sec5 .sec-con{
-  flex: 0 0 1400px;
-  height: auto;
-}
-main   section.sec5 .sec-con .sns-icon{
+.sec5 .sec-inner ul.sns{
   margin: 40px 0;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
 }
-main   section.sec5 .sec-con .sns-icon .icon{
+.sec5 .sec-inner ul.sns li{
   flex: 0 0 320px;
   padding: 40px 60px;
   box-sizing: border-box;
@@ -533,12 +487,12 @@ main   section.sec5 .sec-con .sns-icon .icon{
   align-items: center;
   background-color: var(--main-background-color);
 }
-main   section.sec5 .sec-con .sns-icon .icon img{
+.sec5 .sec-inner ul.sns li img{
   width: 40%;
   height: auto;
   display: block;
 }
-main   section.sec5 .sec-con .sns-icon .icon a{
+.sec5 .sec-inner ul.sns li a{
   text-align: center;
   line-height: 20px;
   margin-top: 20px;

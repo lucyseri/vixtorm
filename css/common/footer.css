@@ -1,53 +1,53 @@
-/* footer */
+/*footer*/
 footer{
   width: 100%;
   height: auto;
   background-color: var(--main-background-color);
 }
-footer .top-footer{
+/* footer - layout */
+footer .footer-sec{
   display: flex;
   justify-content: center;
+}
+footer .footer-sec .footer-inner{
+  flex: 0 0 1400px;
+}
+footer .top-footer{
   border-bottom: 1px solid #ccc;
 }
-footer .top-footer .top-inner{
-  flex: 0 1 1400px;
-}
-footer .top-footer .top-inner .top-nav .top-gnb ul{
+footer .top-footer .top-inner ul{
   display: flex;
   justify-content: space-between;
 }
-footer .top-footer .top-inner .top-nav .top-gnb ul li{
+footer .top-footer .top-inner ul li{
   line-height: 40px;
 }
-footer .top-footer .top-inner .top-nav .top-gnb ul li a{
+footer .top-footer .top-inner ul li a{
   font-size: 0.875rem;
 }
 footer .bottom-footer{
   padding: 20px 0;
-  display: flex;
-  justify-content: center;
 }
 footer .bottom-footer .bottom-inner{
-  flex: 0 1 1400px;
   display: flex;
   justify-content: space-between;
 }
-footer .bottom-footer .bottom-inner .kepco-con{
+footer .bottom-footer .bottom-inner .kepco-info{
   display: flex;
   gap: 40px;
 }
-footer .bottom-footer .bottom-inner .kepco-con .kepco-logo{
-  flex: 0 1 140px;
+footer .bottom-footer .bottom-inner .kepco-info .kepco-logo{
+  flex: 0 0 140px;
 }
-footer .bottom-footer .bottom-inner .kepco-con .kepco-logo img{
+footer .bottom-footer .bottom-inner .kepco-info .kepco-logo img{
   width: 100%;
   height: auto;
   display: block;
 }
-footer .bottom-footer .bottom-inner .kepco-con address{
+footer .bottom-footer .bottom-inner .kepco-info address{
   font-style: normal;
 }
-footer .bottom-footer .bottom-inner .kepco-con address p{
+footer .bottom-footer .bottom-inner .kepco-info address p{
   font-size: 0.875rem;
 }
 footer .bottom-footer .bottom-inner .mark{

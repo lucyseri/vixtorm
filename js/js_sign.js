@@ -60,4 +60,4 @@ joinButton.addEventListener('click', ()=>{
   }
   alert('환영합니다')
   joinForm.submit();
-})
+});

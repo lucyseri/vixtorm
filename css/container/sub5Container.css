@@ -1,46 +1,43 @@
-/* sub5_container */
-main {
-  width: 100%;
-  height: auto;
-}
-main section {
+/* layout */
+section {
   display: flex;
   justify-content: center;
   padding: 60px 0;
 }
-main  section .inner-container {
+section .sec-inner {
   flex: 0 0 1240px;
 }
-main  section .inner-container table,thead,tbody,tr {
+/* table */
+section .sec-inner table,thead,tbody,tr {
   border: none;
 }
-main  section .inner-container table {
+section .sec-inner table {
   width: 100%;
   border: none;
   text-align: center;
 }
-main  section .inner-container table colgroup col.col1 {
+section .sec-inner table colgroup col.col1 {
   width: 80px;
 }
-main  section .inner-container table colgroup col.col2 {
+section .sec-inner table colgroup col.col2 {
   width: 150px;
 }
-main  section .inner-container table colgroup col.col3 {
+section .sec-inner table colgroup col.col3 {
   width: 100px;
 }
-main  section .inner-container table caption {
+section .sec-inner table caption {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-main  section .inner-container table thead tr th {
+section .sec-inner table thead tr th {
   border-top: 3px solid #f00;
   border-bottom: 2px solid #ccc;
   border-left: none;
   border-right: none;
   padding: 15px 0;
 }
-main  section .inner-container table tbody tr td {
+section .sec-inner table tbody tr td {
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #ccc;
@@ -49,53 +46,70 @@ main  section .inner-container table tbody tr td {
   font-size: 0.875rem;
   font-weight: 400;
 }
-main  section .inner-container table tbody tr:hover {
+section .sec-inner table tbody tr:hover {
   background-color: var(--main-background-color);
 }
-main  section .inner-container .search-form{
+/*search*/
+section .sec-inner .search-form{
   display: flex;
   justify-content: center;
   padding: 20px 0;
 }
-main  section .inner-container .search-form form{
-  flex: 0 0 330px;
-  height: 30px;
+section .sec-inner .search-form form{
+  flex: 0 0 332px;
+  /* height: 30px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main  section .inner-container .search-form form select{
+section .sec-inner .search-form form .select-box{
+  flex: 0 0 86px;
+}
+section .sec-inner .search-form form .select-box select{
+  display: block;
+  width: 100%;
+  height: 28px;
   outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  height: inherit;
+  line-height: 32px;
+  font-size: 14px;
 }
-main  section .inner-container .search-form form input[type="text"]{
+section .sec-inner .search-form form .input-box{
+  flex: 0 0 190px;
+}
+section .sec-inner .search-form form .input-box input{
+  display: block;
+  width: 100%;
   outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   height: inherit;
   padding: 0 10px;
   box-sizing: border-box;
+  line-height: 28px;
+  font-size: 14px;
 }
-main  section .inner-container .search-form form input[type="submit"]{
-  display: inline-block;
-  height: inherit;
+section .sec-inner .search-form form button{
+  flex: 0 0 48px;
   outline: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0 10px;
   cursor: pointer;
   background-color: var(--main-background-color);
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 500;
 }
-main  section .inner-container .paging {
+section .sec-inner .paging {
   width: 100%;
   padding: 20px 0 40px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
-main  section .inner-container .paging a {
+section .sec-inner .paging a {
   display: block;
   width: 30px;
   height: 30px;
@@ -103,6 +117,6 @@ main  section .inner-container .paging a {
   text-align: center;
   line-height: 30px;
 }
-main  section .inner-container .paging a:hover {
+section .sec-inner .paging a:hover {
   background-color: var(--main-background-color);
 }
