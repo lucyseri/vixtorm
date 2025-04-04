@@ -154,7 +154,7 @@ for (let i = 0; i < galleryImg.length; i++) {
 };
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  if (value > 720) {
+  if (value > 860) {
     photoGallery.classList.add('sec3Animation');
   } else {
     photoGallery.classList.remove('sec3Animation');

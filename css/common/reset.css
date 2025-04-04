@@ -1,33 +1,58 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=Noto+Sans+KR:wght@100..900&display=swap');
 :root{
 	--main-background-color: #f4f4f4;
+	--primary-color: #ed1c24;
+	--secondary-color: #faa61a;
+	--gray1-color: #f7f6f4;
+	--gray2-color: #efeeed;
+	--gray3-color: #e4e2ed;
+	--gray4-color: #d8d6d3;
+	--gray5-color: #afadaa;
+	--gray6-color: #7e7a73;
+	--gray7-color: #55524B;
+	--gray8-color: #2c2a26;
+	--gray9-color: #171511;
+	--txt1-color: #1a1a1a;
+	--txt2-color: #5c5c5c;
+	--txt3-color: #b5b5b5;
+	--ibm-font: "IBM Plex Sans KR", sans-serif;
+	--noto-font: "Noto Sans KR", sans-serif;
 }
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
-html,body {
+html,body{
 	width: 100%;
 	height: 100%;
 }
-body {
-	font-family: 'IBM Plex Sans KR', sans-serif;
+body{
+	font-size: 16px;
+	font-family: var(--noto-font);
 	font-weight: 400;
+	color: var(--txt1-color);
 }
 #wrap{
 	background-color: #ffffff;
 }
-a {
+a{
 	text-decoration: none;
-	color: #000000;
+	color: var(--txt1-color);
 }
-ul,li {
+ul,li{
 	list-style: none;
 }
-table,th,td {
+table,th,td{
 	border: 1px solid;
 	border-collapse: collapse;
+}
+h2{
+	font-size: 30px;
+	font-weight: 700;
+	font-family: var(--ibm-font);
+	line-height: 48px;
 }
 .ir_pm{
   display: block;

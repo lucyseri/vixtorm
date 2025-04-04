@@ -25,28 +25,31 @@ section .sec-inner table colgroup col.col2 {
 section .sec-inner table colgroup col.col3 {
   width: 100px;
 }
-section .sec-inner table caption {
+section .sec-inner table caption{
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-section .sec-inner table thead tr th {
+section .sec-inner table thead tr th{
   border-top: 3px solid #f00;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--gray3-color);
   border-left: none;
   border-right: none;
-  padding: 15px 0;
+  font-family: var(--ibm-font);
+  font-weight: 700;
+  line-height: 56px;
 }
-section .sec-inner table tbody tr td {
+section .sec-inner table tbody tr td{
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--gray3-color);
   padding: 12px 0;
   box-sizing: border-box;
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 22px;
 }
-section .sec-inner table tbody tr:hover {
+section .sec-inner table tbody tr:hover{
   background-color: var(--main-background-color);
 }
 /*search*/
@@ -56,24 +59,30 @@ section .sec-inner .search-form{
   padding: 20px 0;
 }
 section .sec-inner .search-form form{
-  flex: 0 0 332px;
-  /* height: 30px; */
+  flex: 0 0 354px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 section .sec-inner .search-form form .select-box{
-  flex: 0 0 86px;
+  flex: 0 0 100px;
 }
 section .sec-inner .search-form form .select-box select{
   display: block;
   width: 100%;
-  height: 28px;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray4-color);
   border-radius: 5px;
-  line-height: 32px;
+  line-height: 28px;
   font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top 4px right 8px;
+  padding: 0 8px 0;
 }
 section .sec-inner .search-form form .input-box{
   flex: 0 0 190px;
@@ -82,7 +91,7 @@ section .sec-inner .search-form form .input-box input{
   display: block;
   width: 100%;
   outline: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray4-color);
   border-radius: 5px;
   height: inherit;
   padding: 0 10px;
@@ -101,6 +110,7 @@ section .sec-inner .search-form form button{
   line-height: 28px;
   font-size: 14px;
   font-weight: 500;
+  border: 1px solid var(--gray4-color);
 }
 section .sec-inner .paging {
   width: 100%;
@@ -111,9 +121,9 @@ section .sec-inner .paging {
 }
 section .sec-inner .paging a {
   display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--gray4-color);
   text-align: center;
   line-height: 30px;
 }

@@ -52,8 +52,10 @@
       <div class="goto">
         <ul>
           <li>로그인</li>
+          <span class="bar"></span>
           <li>회원가입</li>
-          <li><a href="https://www.kovomarket.co.kr/" target="_blank">쇼핑몰</a></li>
+          <span class="bar"></span>
+          <li><a href="https://www.kovomarket.co.kr/" target="_blank">KOVO 스토어</a></li>
         </ul>
       </div>
       <div class="login popup">
@@ -90,12 +92,14 @@
               </li>
               <li>
                 <label for="userPhoneFront">전화번호</label>
-                <select name="userPhoneFront" id="userPhoneFront">
-                  <option value="" selected>선택</option>
-                  <option value="010">010</option>
-                  <option value="011">011</option>
-                </select>
-                <input type="text" name="userPhoneBack" id="userPhoneBack" maxlength="8" placeholder="공백없이 숫자만 입력">
+                <div class="input-box">
+                  <select name="userPhoneFront" id="userPhoneFront">
+                    <option value="" selected>선택</option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                  </select>
+                  <input type="text" name="userPhoneBack" id="userPhoneBack" maxlength="8" placeholder="공백없이 숫자만 입력">
+                </div>
               </li>
               <li>
                 <label for="joinUserEmail">이메일</label>

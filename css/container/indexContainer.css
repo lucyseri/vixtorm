@@ -7,6 +7,7 @@ main{
 main section:not(.sec1){
   display: flex;
   justify-content: center;
+  padding: 60px 0;
 }
 main section .sec-inner{
   flex: 0 0 1400px;
@@ -18,27 +19,54 @@ main section .sec-inner{
 }
 .title h2{
   margin-right: 10px;
-  line-height: 40px;
-  font-size: 1.875rem;
-  font-weight: 700;
 }
 .title .btn{
-  width: 40px;
-  height: 40px;
-  background-image: url("../../img/plus.png");
+  width: 48px;
+  height: 48px;
+  background-image: url("../../img/plus.svg");
   background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .title .btn:hover{
-  background-position: 40px 0px;
+  background-position: -48px 0px;
   cursor: pointer;
 }
-.carousel{}
-.carousel .arrow-btn{}
-.carousel .arrow-btn.left{}
-.carousel .arrow-btn.right{}
-.carousel .carousel-frame{}
-.carousel .carousel-frame ul.carousel-con{}
-.carousel .carousel-frame ul.carousel-con li{}
+.carousel{
+  width: 100%;
+  position: relative;
+  margin: 40px 0 0;
+}
+.carousel .arrow-btn{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  background: url("../../img/arrow.svg") no-repeat center / auto;
+  cursor: pointer;
+}
+.carousel .arrow-btn.left{
+  left: -60px;
+  transform: translateY(-50%);
+}
+.carousel .arrow-btn.right{
+  right: -60px;
+  transform: translateY(-50%) scaleX(-1);
+}
+.carousel .carousel-frame{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.carousel .carousel-frame ul.carousel-con{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
 /* section1 - main banner */
 .sec1{
   width: 100%;
@@ -81,93 +109,58 @@ main section .sec-inner{
   width: 100%;
   height: auto;
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
 }
 .sec1 .main-banner .bcon ul{
   flex: 0 0 120px;
-  height: 40px;
   display: flex;
   justify-content: space-between;
+  padding: 8px;
+  border-radius: 24px;
+  background-color: #00000046;
 }
 .sec1 .main-banner .bcon ul li{
-  flex: 0 0 40px;
-  height: inherit;
-  background-image: url("../../img/play.png");
+  flex: 0 0 32px;
+  height: 32px;
+  background-image: url("../../img/play.svg");
+  cursor: pointer;
 }
 .sec1 .main-banner .bcon ul li:nth-child(1){
-  cursor: pointer;
   background-position: 0px 0px;
 }
 .sec1 .main-banner .bcon ul li:nth-child(2){
-  background-position: 80px 0px;
+  background-position: 64px 0px;
 }
 .sec1 .main-banner .bcon ul li:nth-child(3){
-  background-position: 120px 0px;
+  background-position: 96px 0px;
 }
 .sec1 .main-banner .bcon ul li:nth-child(4){
-  background-position: 40px 0;
-  cursor: pointer;
+  background-position: 32px 0;
 }
 .replay{
   display: none !important;
 }
-/*section 2  - game schedule*/
-.sec2{
-  padding: 60px 0;
-}
+/*section 2 - game schedule*/
 .sec2 .sec-inner .carousel{
-  margin: 40px 0;
-  width: 100%;
   height: 440px;
-  position: relative;
-}
-.sec2 .sec-inner .carousel .arrow-btn{
-  width: 48px;
-  height: 48px;
-  background-color: #000;
-  position: absolute;
-  top: 50%;
-  background: url("../../img/arrow.svg") no-repeat center / auto;
-  cursor: pointer;
-}
-.sec2 .sec-inner .carousel .arrow-btn.left{
-  left: -60px;
-  transform: translateY(-50%);
-}
-.sec2 .sec-inner .carousel .arrow-btn.right{
-  right: -60px;
-  transform: translateY(-50%) scaleX(-1);
-}
-.sec2 .sec-inner .carousel .carousel-frame{
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con{
   width: calc(320px * 12 + 40px * 11);
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
   gap: 40px;
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li{
   flex:  0 0 320px;
   border-top: 5px solid #f00;
   padding: 40px;
-  box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li p.round{
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
   text-align: center;
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday{
@@ -175,14 +168,16 @@ main section .sec-inner{
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday .date{
   text-align: center;
-  line-height: 20px;
+  line-height: 32px;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 18px;
+  font-family: var(--ibm-font);
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .gameday .place{
-  font-size: 0.875rem;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 22px;
   text-align: center;
+  color: var(--txt2-color);
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem{
   display: flex;
@@ -199,7 +194,7 @@ main section .sec-inner{
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .emblem .verse{
   flex: 0 0 40px;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
@@ -214,18 +209,20 @@ main section .sec-inner{
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team .score .team-name{
   font-weight: 700;
+  font-family: var(--ibm-font);
   line-height: 40px;
   text-align: center;
 }
 .sec2 .sec-inner .carousel .carousel-frame ul.carousel-con li .team .score .team-score{
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: var(--ibm-font);
   text-align: center;
 }
 /* section3 - game gallery */
 .sec3 .sec-inner .photo-gallery{
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 .sec3Animation{
   animation: sec3Ani 1s ease-in-out;
@@ -248,7 +245,6 @@ main section .sec-inner{
   gap: 5px;
 }
 .sec3 .sec-inner .photo-gallery ul li{
-  box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
 .sec3 .sec-inner .photo-gallery ul li:nth-child(1){
@@ -308,16 +304,16 @@ main section .sec-inner{
   height: auto;
 }
 .sec3 .sec-inner .light-box .box-inner .out-btn{
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   margin: 0 auto 40px;
-  background-image: url("../../img/out.jpg");
+  background-image: url("../../img/close.svg");
   background-position: 0px 0px;
   background-size: auto;
   cursor: pointer;
 }
 .sec3 .sec-inner .light-box .box-inner .out-btn:hover{
-  background-position: 40px 0px;
+  background-position: 48px 0px;
 }
 .sec3 .sec-inner .light-box .box-inner .box-con{
   width: 100%;
@@ -349,7 +345,6 @@ main section .sec-inner{
   top: 50%;
   transform: translateY(-50%);
   padding: 0 20px;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
 }
@@ -358,7 +353,6 @@ main section .sec-inner{
   height: 30px;
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
-  box-sizing: border-box;
   cursor: pointer;
 }
 .sec3 .sec-inner .light-box .box-inner .box-con .arrow-btn span.sec3arrow.left{
@@ -380,48 +374,15 @@ main section .sec-inner{
   padding: 20px 0;
 }
 /* section4 - player info */
-.sec4{
-  padding: 40px 0;
-}
 .sec4 .sec-inner .carousel{
-  width: 100%;
   height: 404px;
-  position: relative;
-  margin: 40px 0;
-}
-.sec4 .sec-inner .carousel .arrow-btn{
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 50%;
-  background: url("../../img/arrow.svg") no-repeat center / auto;
-  cursor: pointer;
-}
-.sec4 .sec-inner .carousel .arrow-btn.left{
-  left: -60px;
-  transform: translateY(-50%);
-}
-.sec4 .sec-inner .carousel .arrow-btn.right{
-  right: -60px;
-  transform: translateY(-50%) scaleX(-1);
-}
-.sec4 .sec-inner .carousel .carousel-frame{
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
+  margin: 40px 0 0;
 }
 .sec4 .sec-inner .carousel .carousel-frame ul.carousel-con{
   width: 2820px;
   height: inherit;
-  display: flex;
   justify-content: space-between;
   gap: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li{
   flex: 0 0 264px;
@@ -455,46 +416,120 @@ main section .sec-inner{
   bottom: -30px;
   left: 0;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.125rem;
+  line-height: 32px;
+  font-family: var(--ibm-font);
 }
 .sec4 .sec-inner .carousel .carousel-frame ul.carousel-con li.sec4Animation a span.player-name{
   bottom: 0 !important;
   font-style: italic;
+  font-weight: 700;
   background-color: #f4f4f493;
   padding: 8px 0;
 }
-/* section5 - sns */
+/* section5 - md */
 .sec5{
-  width: 100%;
-  height: auto;
-  padding: 60px 0;
   background-color: #fff;
 }
-.sec5 .sec-inner ul.sns{
-  margin: 40px 0;
+.sec5 .md-con{
+  display: flex;
+  gap: 40px;
+  margin: 40px 0 0;
+}
+.sec5 .md-con a{
+  width: 100%;
+  background-color: var(--main-background-color);
+}
+.sec5 .md-con .best-product{
+  flex: 0 0 440px;
+}
+.sec5 .md-con .best-product a{
+  height: 920px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sec5 .md-con .last-product{
+  flex: 0 0 calc(100% - 440px);
+}
+.sec5 .md-con .last-product ul{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.sec5 .md-con .last-product ul li{
+  flex: 0 0 440px;
+}
+.sec5 .md-con a, img , span{
+  display: block;
+  width: 100%;
+}
+.sec5 .md-con .last-product a{
+  padding: 32px 80px;
+  min-height: 440px;
+}
+.sec5 .md-con a span.best-badge{
+  margin: 0 auto 40px;
+  width: 58px;
+  height: 38px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 500;
+}
+.sec5 .md-con a img{
+  width: 100%;
+  height: auto;
+}
+.sec5 .md-con a span.product-name{
+  margin: 16px 0 8px;
+  line-height: 22px;
+  font-size: 14px;
+}
+.sec5 .md-con a span.product-price{
+  font-weight: 700;
+  font-family: var(--ibm-font);
+}
+/* section6 - sns */
+.sec6{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.sec6 .sec-inner{
+  padding: 0 0 80px;
+}
+.sec6 .sec-inner ul.sns{
+  margin: 40px 0 0;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
 }
-.sec5 .sec-inner ul.sns li{
+.sec6 .sec-inner ul.sns li{
   flex: 0 0 320px;
   padding: 40px 60px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--main-background-color);
 }
-.sec5 .sec-inner ul.sns li img{
+.sec6 .sec-inner ul.sns li img{
   width: 40%;
   height: auto;
   display: block;
 }
-.sec5 .sec-inner ul.sns li a{
+.sec6 .sec-inner ul.sns li a{
   text-align: center;
-  line-height: 20px;
   margin-top: 20px;
   font-weight: 700;
+  font-family: var(--ibm-font);
 }

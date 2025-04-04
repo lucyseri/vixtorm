@@ -7,7 +7,7 @@ $('.header-include').load("html/header.html", function(){
     const idx = $(this).index();
     if (idx == 0) {
       $(".login.popup").addClass("popupSign");
-    } else if (idx == 1) {
+    } else if (idx == 2) {
       $(".join.popup").addClass("popupSign");
     }
   });
@@ -38,11 +38,25 @@ $('.header-include').load("html/header.html", function(){
   const joinButton = document.querySelector('button.join');
   const joinForm = document.querySelector('#joinForm');
   const userjoinName = document.querySelector('#userName');
-  const userjoinPhoneSelect = document.querySelector('select#userPhone');
+  const userjoinPhoneSelect = document.querySelector('#userPhoneFront');
   const userJoinPhone = document.querySelector('#userPhoneBack');
   const userjoinEmail = document.querySelector('#joinUserEmail');
   const userjoinPw = document.querySelector('#joinUserPw');
   const userjoinPw2 = document.querySelector('#userPw2');
+  trigger = true;
+  $(userjoinPhoneSelect).on("click", function(){
+    if(trigger){
+      $(this).css('backgroundImage', 'url("../../img/up-arrow.svg")')
+      trigger = false;
+    }else{
+      $(this).css('backgroundImage', 'url("../../img/down-arrow.svg")')
+      trigger = true;
+    }
+  }); 
+  $(userjoinPhoneSelect).on("focusout", function(){
+    $(this).css('backgroundImage', 'url("../../img/down-arrow.svg")')
+    trigger = true;
+  }); 
   $('.join-submit').on("click", function(){
     const phoneRegexp = /[0-9]/;
     const regexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;

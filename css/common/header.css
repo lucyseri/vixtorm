@@ -14,7 +14,6 @@ header .inner-header nav {
 }
 header .inner-header nav h1.logo {
   padding: 10px 0;
-  box-sizing: border-box;
   flex: 0 0 200px;
 }
 header .inner-header nav h1.logo a img {
@@ -22,6 +21,7 @@ header .inner-header nav h1.logo a img {
   height: auto;
   display: block;
 }
+/* gnb */
 header .inner-header nav .gnb {
   flex: 0 0 680px;
 }
@@ -32,23 +32,23 @@ header .inner-header nav .gnb ul {
 }
 header .inner-header nav .gnb>ul>li {
   position: relative;
-  padding: 10px 0;
-  box-sizing: border-box;
 }
 header .inner-header nav .gnb>ul>li>a {
+  font-family: var(--ibm-font);
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 80px;
 }
 header .inner-header nav .gnb>ul>li:hover>a {
   letter-spacing: 2px;
 }
+/* lnb */
 header .inner-header nav .gnb ul>li ul.sub::before {
   content: '';
   display: block;
   width: 0;
   height: 0;
-  border-bottom: 10px solid rgb(255, 0, 0);
+  border-bottom: 10px solid var(--primary-color);
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   position: absolute;
@@ -65,8 +65,8 @@ header .inner-header nav .gnb ul>li ul.sub {
   display: none;
   background-color: var(--main-background-color);
   transition: all 0.2s;
-  padding: 0 0 20px;
-  border-top: 3px solid #f00;
+  /* padding: 0 0 20px; */
+  border-top: 3px solid var(--primary-color);
   z-index: 30;
 }
 header .inner-header nav .gnb ul li:hover ul.sub {
@@ -74,50 +74,47 @@ header .inner-header nav .gnb ul li:hover ul.sub {
 }
 header .inner-header nav .gnb ul>li ul.sub li {
   text-align: center;
-  line-height: 40px;
-  color: rgb(0, 0, 0);
+  line-height: 52px;
+}
+header .inner-header nav .gnb ul>li ul.sub li:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 header .inner-header nav .gnb ul>li ul.sub li a {
+  display: block;
+  width: 100%;
   font-size: 1rem;
   font-weight: 500;
   background-color: inherit;
   color: inherit;
 }
-header .inner-header nav .gnb ul>li ul.sub li:hover {
-  background-color: rgb(255, 0, 0);
-  color: #fff;
-}
 header .inner-header nav .goto {
   flex: 0 0 200px;
   padding: 10px 0;
-  box-sizing: border-box;
 }
 header .inner-header nav .goto ul {
   display: flex;
   justify-content: end;
-  gap: 20px;
+  align-items: center;
+  gap: 12px;
 }
 header .inner-header nav .goto ul li {
   text-align: right;
-  position: relative;
   cursor: pointer;
   font-size: 0.75rem;
+  font-weight: 500;
   line-height: 60px;
 }
 header .inner-header nav .goto ul li a {
   font-size: inherit;
+  font-weight: inherit;
   line-height: inherit;
 }
-header .inner-header nav .goto ul li:not(:last-child)::after {
-  content: '';
-  display: block;
+header .inner-header nav .goto ul span.bar {
+  display: inline-block;
   width: 2px;
-  height: 12px;
-  background-color: rgb(255, 0, 0);
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 10px;
+  background-color: var(--primary-color);
 }
 /*login & join common */
 header .inner-header nav .popup {
@@ -126,7 +123,6 @@ header .inner-header nav .popup {
   align-items: center;
   z-index: 90;
   padding: 100px;
-  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -141,18 +137,35 @@ header .inner-header nav .popup .out-btn{
   width: 40px;
   height: 40px;
   margin: 0 auto;
-  background-image: url("../../img/out.jpg");
+  background-image: url("../../img/close.svg");
   background-position: 0px 0px;
+  background-size: 80px 40px;
   cursor: pointer;
 }
 header .inner-header nav .popup .out-btn:hover{
-  background-position: 40px 0px;
+  background-position: -40px 0px;
+}
+form label{
+  line-height: 40px;
+  font-family: var(--ibm-font);
+}
+form button{
+  width: 100%;
+  font-size: 18px;
+  font-family: var(--ibm-font);
+  font-weight: 700;
+  line-height: 32px;
+  padding: 10px 0;
+  background-color: var(--main-background-color);
+  outline: 0;
+  border: 0;
+  border-top: 3px solid var(--primary-color);
+  cursor: pointer;
 }
 /*login popup*/
 header .inner-header nav .popup .login-con{
-  flex: 0 0 400px;
+  flex: 0 0 440px;
   background-color: #fff;
-  box-sizing: border-box;
   padding: 40px;
 }
 header .inner-header nav .popup .login-con form{
@@ -167,9 +180,6 @@ header .inner-header nav .popup .login-con form ul li{
   display: flex;
   justify-content: space-between;
 }
-header .inner-header nav .popup .login-con form ul li label{
-  line-height: 40px;
-}
 header .inner-header nav .popup .login-con form ul li input{
   flex: 0 1 200px;
   height: 40px;
@@ -178,31 +188,19 @@ header .inner-header nav .popup .login-con form ul li input{
   border: 0;
   padding-left: 12px;
 }
-header .inner-header nav .popup .login-con form ul li button{
-  width: 100%;
-  font-size: 1.125rem;
-  padding: 10px 0;
-  box-sizing: border-box;
-  background-color: var(--main-background-color);
-  outline: 0;
-  border: 0;
-  border-top: 3px solid #f00;
-  cursor: pointer;
-}
 header .inner-header nav .popup .login-con .search{
   width: 100%;
 }
 header .inner-header nav .popup .login-con .search a{
   width: 100%;
   display: block;
-  font-size: 0.75rem;
+  font-size: 12px;
   text-align: right;
 }
 /*join popup*/
 header .inner-header nav .popup .join-con{
-  flex: 0 0 500px;
+  flex: 0 0 520px;
   height: auto;
-  box-sizing: border-box;
   padding: 40px;
   background-color: #fff;
 }
@@ -220,39 +218,40 @@ header .inner-header nav .popup .join-con form ul li{
 }
 header .inner-header nav .popup .join-con form ul li label{
   flex: 0 0 100px;
-  line-height: 40px;
 }
 header .inner-header nav .popup .join-con form ul li input{
   padding: 0 10px;
-  box-sizing: border-box;
 }
 header .inner-header nav .popup .join-con form ul li input:not(#userPhoneBack){
-  flex: 0 0 300px;
+  flex: 0 0 320px;
   height: 40px;
   background-color: var(--main-background-color);
   outline: 0;
   border: 0;
 }
-header .inner-header nav .popup .join-con form ul li select{
-  flex: 0 0 70px;
+header .inner-header nav .popup .join-con form ul li .input-box{
+  display: flex;
+  gap: 10px;
 }
-header .inner-header nav .popup .join-con form ul li:nth-child(2) input{
-  width: 230px;
+header .inner-header nav .popup .join-con form ul li .input-box select{
+  flex: 0 0 80px;
+  outline: none;
+  border: 1px solid var(--gray4-color);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../img/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top 10px right 8px;
+  padding: 10px 36px 10px 8px;
+}
+header .inner-header nav .popup .join-con form ul li .input-box input{
+  flex: 0 0 230px;
   height: 40px;
   background-color: var(--main-background-color);
   outline: 0;
   border: 0;
-}
-header .inner-header nav .popup .join-con form ul li button{
-  width: 100%;
-  font-size: 1.125rem;
-  padding: 10px 0;
-  box-sizing: border-box;
-  background-color: var(--main-background-color);
-  outline: 0;
-  border: 0;
-  border-top: 3px solid #f00;
-  cursor: pointer;
 }
 .popupSign{
   height: 100vh !important;
